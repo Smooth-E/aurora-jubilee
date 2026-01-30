@@ -116,11 +116,11 @@ function setHistoryLabel(rowid, label) {
     console.log("[storage] setting label for history entry", rowid, "to", label)
 
     DB.simpleQuery('\
-        UPDATE history
+        UPDATE _history
         SET label = ?
         WHERE rowid = ?
     ', [label, rowid],
-    {notify: true})
+    {notify: true, fatal: false})
 }
 
 function moveHistoryItem(rowid, newIndex) {
@@ -132,7 +132,7 @@ function moveHistoryItem(rowid, newIndex) {
         SET seq = ?
         WHERE rowid = ?
     ', [newPosition, rowid],
-    {notify: true})
+    {notify: true, fatal: false})
 }
 
 function deleteHistoryItem(rowid) {
