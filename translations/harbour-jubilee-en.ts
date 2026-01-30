@@ -86,23 +86,23 @@
 <context>
     <name>CalcView</name>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="65"/>
-        <location filename="../qml/pages/CalcView.qml" line="135"/>
+        <location filename="../qml/pages/CalcView.qml" line="67"/>
+        <location filename="../qml/pages/CalcView.qml" line="144"/>
         <source>Calculations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="69"/>
+        <location filename="../qml/pages/CalcView.qml" line="71"/>
         <source>Dates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="74"/>
+        <location filename="../qml/pages/CalcView.qml" line="76"/>
         <source>Selected date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="100"/>
+        <location filename="../qml/pages/CalcView.qml" line="102"/>
         <source>Projected date</source>
         <translation type="unfinished"></translation>
     </message>
@@ -112,12 +112,12 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="110"/>
+        <location filename="../qml/pages/CalcView.qml" line="112"/>
         <source>Pick a date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="117"/>
+        <location filename="../qml/pages/CalcView.qml" line="119"/>
         <source>Set to “now”</source>
         <translation type="unfinished"></translation>
     </message>
@@ -154,12 +154,12 @@
 <context>
     <name>ExternalUrlPage</name>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="87"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="218"/>
         <source>Swipe left to preview.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="87"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="219"/>
         <source>You are using a mobile data connection.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -182,7 +182,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/HistoryView.qml" line="92"/>
+        <location filename="../qml/pages/HistoryView.qml" line="96"/>
         <source>year(s)</source>
         <comment>as in: “age: 50 years”</comment>
         <translation type="unfinished">
@@ -191,7 +191,12 @@
         </translation>
     </message>
     <message>
-        <location filename="../qml/pages/HistoryView.qml" line="108"/>
+        <location filename="../qml/pages/HistoryView.qml" line="125"/>
+        <source>Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HistoryView.qml" line="133"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
@@ -446,47 +451,47 @@
 <context>
     <name>Opal.LinkHandler</name>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="51"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="137"/>
         <source>Phone number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="51"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="138"/>
         <source>External link</source>
         <translation>External link</translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="73"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="206"/>
         <source>Copy link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="75"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="211"/>
         <source>Copy text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="79"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="189"/>
         <source>Share</source>
         <translation>Share</translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="84"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="180"/>
         <source>Open in browser</source>
         <translation>Open in browser</translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="84"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="181"/>
         <source>Open externally</source>
         <translation>Open externally</translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="36"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="95"/>
         <source>Copied to clipboard: %1</source>
         <translation>Copied to clipboard: %1</translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="47"/>
+        <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="122"/>
         <source>Share link</source>
         <translation>Share link</translation>
     </message>
@@ -504,49 +509,75 @@
 <context>
     <name>Opal.LocalStorage</name>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="36"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="251"/>
         <source>Database upgrade failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="36"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="252"/>
         <source>An error occurred while upgrading the database from version %1 to version %2. Please report this issue.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="36"/>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
-        <source>Developer information:</source>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="235"/>
+        <source>Database query failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="38"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="236"/>
+        <source>An error occurred while accessing the database.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="238"/>
+        <source>Try restarting the app.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="239"/>
+        <source>Please report this issue if it happens again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="262"/>
         <source>Invalid database version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="38"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="263"/>
         <source>The app cannot start because the database has version %1 but only version %2 is supported.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="40"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="272"/>
         <source>Database Maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="40"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="273"/>
         <source>Please be patient and allow up to 30 seconds for this.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="278"/>
         <source>Database issue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
+        <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="279"/>
         <source>An unexpected issue occurred in the database. Try restarting the app.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="64"/>
+        <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="76"/>
+        <source>Dismiss</source>
+        <comment>as in “hide (dismiss) this popup message”</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/modules/Opal/LocalStorage/private/ExtendedBusyLabel.qml" line="53"/>
+        <source>Show details</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
