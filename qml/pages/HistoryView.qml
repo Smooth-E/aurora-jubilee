@@ -50,13 +50,15 @@ TabItem {
             }
         }
 
-        delegate: TwoLineDelegate {
+        delegate: ThreeLineDelegate {
             id: delegate
 
             property int _rowid: model.rowid
             property var tzInfo: TimezoneInfo.findTimezoneInfo(model.tz)
+            property string formattedDate: Dates.formatDate(model.date, Dates.dateTimeFormat)
 
-            text: Dates.formatDate(model.date, Dates.dateTimeFormat)
+            title: model.label ? formattedDate : ""
+            text: model.label || Dates.formatDate(model.date, Dates.dateTimeFormat)
             description: model.tz !== LOCAL_TIMEZONE ?
                 (!!tzInfo ? "%2 (%1)".arg(tzInfo.country).arg(tzInfo.city) : model.tz) : ""
             dragHandler: viewDragHandler
@@ -106,9 +108,25 @@ TabItem {
 
             menu: Component {
                 ContextMenu {
+                    onClosed: {
+                        var newLabel = labelField.text.trim()
+                        Storage.setHistoryLabel(delegate._rowid, newLabel)
+                        app.historyModel.set(delegate.modelIndex, {label: newLabel})
+                    }
+
                     MenuLabel {
                         visible: delegate.description !== model.tz && !!text
                         text: !!tzInfo ? "%1, %2, %3".arg(tzInfo.city).arg(tzInfo.country).arg(tzInfo.area) : ""
+                    }
+
+                    TextField {
+                        id: labelField
+                        width: parent.width
+                        label: qsTr("Label")
+                        text: model.label
+
+                        EnterKey.onClicked: delegate.closeMenu()
+                        EnterKey.iconSource: "image://theme/icon-m-enter-accept"
                     }
 
                     MenuItem {
