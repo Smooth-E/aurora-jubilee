@@ -45,7 +45,7 @@ function getHistoryEntries() {
         SELECT rowid, date, tz, seq
         FROM history
         ORDER BY seq ASC
-    ;', [])
+    ;', [], {notify: true})
 
     var entries = []
     var len = q.rows.length
@@ -84,7 +84,7 @@ function saveToHistory(date, tz) {
             ?,
             NULL
         )
-    ', [date, tz])
+    ', [date, tz], {notify: true})
 
     var q3 = DB.simpleQuery('\
         SELECT rowid, date, tz, seq
@@ -111,10 +111,12 @@ function moveHistoryItem(rowid, newIndex) {
         UPDATE history
         SET seq = ?
         WHERE rowid = ?
-    ', [newPosition, rowid])
+    ', [newPosition, rowid],
+    {notify: true})
 }
 
 function deleteHistoryItem(rowid) {
     console.log("[storage] deleting history entry", rowid)
-    DB.simpleQuery('DELETE FROM history WHERE rowid = ?;', [rowid])
+    DB.simpleQuery('DELETE FROM history WHERE rowid = ?;', [rowid],
+                   {notify: true})
 }
