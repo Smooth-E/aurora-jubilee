@@ -122,6 +122,13 @@ TabItem {
                     }
                 }
 
+                onDateChanged: {
+                    if (haveStartDate) {
+                        app.calculateAge(selectedPicker.date, selectedPicker.tz,
+                                         projectedPicker.date, projectedPicker.tz)
+                    }
+                }
+
                 Connections {
                     target: app.wallClock
                     onTimeChanged: {
