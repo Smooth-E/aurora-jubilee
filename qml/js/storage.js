@@ -20,8 +20,8 @@ DB.migrations = [
         tx.executeSql('\
             CREATE TABLE IF NOT EXISTS _history(
                 rowid INTEGER PRIMARY KEY,
-                date TEXT,
-                tz TEXT,
+                date TEXT NOT NULL,
+                tz TEXT NOT NULL,
                 seq INTEGER
             );
         ')
