@@ -22,17 +22,9 @@ DB.migrations = [
                 rowid INTEGER PRIMARY KEY,
                 date TEXT NOT NULL,
                 tz TEXT NOT NULL,
+                label TEXT DEFAULT "",
                 seq INTEGER
             );
-        ')
-        DB.makeTableSortable(tx, "_history", "seq")
-    }],
-    [2, function(tx){
-        tx.executeSql('\
-            DROP VIEW IF EXISTS history;
-        ')
-        tx.executeSql('\
-            ALTER TABLE _history ADD COLUMN label TEXT DEFAULT "";
         ')
         DB.makeTableSortable(tx, "_history", "seq")
     }],
