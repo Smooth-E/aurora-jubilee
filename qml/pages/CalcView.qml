@@ -55,6 +55,8 @@ TabItem {
 
         ViewPulley {}
 
+        VerticalScrollDecorator { flickable: view }
+
         Column {
             id: column
 
