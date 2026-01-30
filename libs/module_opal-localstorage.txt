@@ -13,7 +13,7 @@
 #   on the About page of your app. Use the information below.
 
 module: Opal.LocalStorage (opal-localstorage)
-version: 0.3.3 (git:3089f76)
+version: 0.3.3 (git:a8dc93a)
 description: This module provides a set of tools for handling local databases safely and extensibly in JavaScript and Python.
 maintainers: Mirian Margiani
 attribution: 2018-2026 Mirian Margiani

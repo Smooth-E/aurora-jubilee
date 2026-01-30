@@ -1,7 +1,7 @@
 //@ This file is part of opal-localstorage.
 //@ https://github.com/Pretty-SFOS/opal-localstorage
 //@ SPDX-License-Identifier: GPL-3.0-or-later
-//@ SPDX-FileCopyrightText: 2018-2025 Mirian Margiani
+//@ SPDX-FileCopyrightText: 2018-2026 Mirian Margiani
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import"."
@@ -9,12 +9,17 @@ Rectangle{id:root
 objectName:"BlockingOverlay"
 property alias text:label.text
 property alias hintText:label.hintText
+property alias smallprint:label.smallprintText
 property alias busy:label.running
+property bool allowDismiss:false
 property bool _destroyAfterHiding:false
+signal dismissed
 readonly property bool _portrait:(__silica_applicationwindow_instance.orientation&Orientation.PortraitMask)!==0
 function show(){state="shown"
 }function hide(destroyAfter){state="hidden"
 _destroyAfterHiding=destroyAfter
+}function dismiss(){hide(true)
+dismissed()
 }state:"hidden"
 visible:false
 opacity:0.0
@@ -27,12 +32,27 @@ height:_portrait?parent.height:parent.width
 SilicaFlickable{id:flick
 anchors.fill:parent
 anchors.centerIn:parent
-contentHeight:label.height
+contentHeight:column.height+Theme.horizontalPageMargin
 contentWidth:root.width
-VerticalScrollDecorator{flickable:flick
-}ExtendedBusyLabel{id:label
+Loader{active:allowDismiss
+sourceComponent:Component{PullDownMenu{MenuItem{text:qsTranslate("Opal.LocalStorage","Dismiss","as in “hide (dismiss) this popup message”")
+onClicked:dismiss()
+}}}}Loader{active:allowDismiss
+sourceComponent:Component{PushUpMenu{MenuItem{text:qsTranslate("Opal.LocalStorage","Dismiss","as in “hide (dismiss) this popup message”")
+onClicked:dismiss()
+}}}}VerticalScrollDecorator{flickable:flick
+}Column{id:column
+height:childrenRect.height
+width:parent.width
+Item{width:parent.width
+height:body.height>root.height?3*Theme.horizontalPageMargin:(root.height-body.height)/2
+}Column{id:body
+width:parent.width
+height:childrenRect.height
+spacing:Theme.paddingLarge
+ExtendedBusyLabel{id:label
 running:root.visible
-}}states:[State{name:"shown"
+}}}}states:[State{name:"shown"
 PropertyChanges{target:root
 visible:true
 }PropertyChanges{target:root
