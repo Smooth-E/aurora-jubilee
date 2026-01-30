@@ -53,7 +53,7 @@ TabItem {
         delegate: TwoLineDelegate {
             id: delegate
 
-            property int rowid: model.rowid
+            property int _rowid: model.rowid
             property var tzInfo: TimezoneInfo.findTimezoneInfo(model.tz)
 
             text: Dates.formatDate(model.date, Dates.dateTimeFormat)
@@ -61,6 +61,7 @@ TabItem {
             dragHandler: viewDragHandler
             hideRightItemWhileDragging: false
             enableDefaultGrabHandle: false
+            ListView.onRemove: animateRemoval(delegate)
 
             // move the drag handle left
             leftItem: DragHandle {
@@ -106,11 +107,13 @@ TabItem {
                 ContextMenu {
                     MenuItem {
                         text: qsTr("Remove")
-                        onClicked: delegate.remorseDelete(function(storage, app){
-                            this.animateRemoval()
-                            storage.deleteHistoryItem(this.rowid)
-                            app.historyModel.remove(this.index)
-                        }.bind(delegate, Storage, app))
+                        onClicked: {
+                            delegate.remorseDelete(function(app, storage){
+                                console.log("removing history entry:", this._rowid, this.modelIndex)
+                                storage.deleteHistoryItem(this._rowid)
+                                app.historyModel.remove(this.modelIndex)
+                            }.bind(delegate, app, Storage))
+                        }
                     }
                 }
             }
