@@ -68,7 +68,9 @@ TwoLineDelegate {
                         tz = LOCAL_TIMEZONE
                     }
 
+                    tzInfo = TimezoneInfo.findTimezoneInfo(tz) // breaks the binding
                     date = newDate + ' ' + newTime
+                    root.dateChanged() // always notify in case tz changed
                     console.log("picked date:", date, tz)
                 })
             })
