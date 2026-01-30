@@ -57,7 +57,8 @@ TabItem {
             property var tzInfo: TimezoneInfo.findTimezoneInfo(model.tz)
 
             text: Dates.formatDate(model.date, Dates.dateTimeFormat)
-            description: !!tzInfo ? "%2 (%1)".arg(tzInfo.country).arg(tzInfo.city) : model.tz
+            description: model.tz !== LOCAL_TIMEZONE ?
+                (!!tzInfo ? "%2 (%1)".arg(tzInfo.country).arg(tzInfo.city) : model.tz) : ""
             dragHandler: viewDragHandler
             hideRightItemWhileDragging: false
             enableDefaultGrabHandle: false
@@ -105,6 +106,11 @@ TabItem {
 
             menu: Component {
                 ContextMenu {
+                    MenuLabel {
+                        visible: delegate.description !== model.tz && !!text
+                        text: !!tzInfo ? "%1, %2, %3".arg(tzInfo.city).arg(tzInfo.country).arg(tzInfo.area) : ""
+                    }
+
                     MenuItem {
                         text: qsTr("Remove")
                         onClicked: {
