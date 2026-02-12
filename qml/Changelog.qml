@@ -9,10 +9,10 @@ import "modules/Opal/About"
 
 ChangelogList {
     ChangelogItem {
-        version: '0.1.0-1'
-        date: "2026-01-01"
+        version: "1.0.0-1"
+        date: "2026-02-12"
         paragraphs: [
-            'Initial release.'
+            "- initial release"
         ]
     }
 }
