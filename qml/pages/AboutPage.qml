@@ -29,7 +29,7 @@ A.AboutPageBase {
 
     sourcesUrl: "https://github.com/ichthyosaurus/%1".arg(Qt.application.name)
     homepageUrl: "https://forum.sailfishos.org/t/apps-by-ichthyosaurus/15753"
-    translationsUrl: "https://hosted.weblate.org/projects/%1".arg(Qt.application.name)
+    // translationsUrl: "https://hosted.weblate.org/projects/%1".arg(Qt.application.name)
     changelogList: Qt.resolvedUrl("../Changelog.qml")
     licenses: A.License { spdxId: "GPL-3.0-only" }
 
@@ -41,7 +41,7 @@ A.AboutPageBase {
         }
     ]
 
-    description: qsTr("An app to calculate your next anniversary.")
+    description: qsTr("An app to calculate anniversaries.")
     mainAttributions: ["2025-%1 Mirian Margiani".arg((new Date()).getFullYear())]
 
     attributions: [
