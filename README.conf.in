@@ -21,10 +21,10 @@ dnl/// [ABOUT PAGE FILE PATH](required)
 define(${__about_page}, ${qml/pages/AboutPage.qml})
 
 dnl/// [SOURCE CODE HOSTING PLATFORM](required)
-define(${__forge}, ${Github})
+define(${__forge}, ${Codeberg})
 
 dnl/// [SOURCE REPO URL](required): full url including repo name without protocol
-define(${__repo_url}, ${github.com/ichthyosaurus/__slug})
+define(${__repo_url}, ${codeberg.org/ichthyosaurus/__slug})
 
 dnl/// [WEBLATE PROJECT](optional): set to __slug for most apps
 define(${__weblate_project}, __slug)

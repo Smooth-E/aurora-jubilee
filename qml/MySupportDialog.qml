@@ -16,20 +16,20 @@ SupportDialog {
         link: "https://liberapay.com/ichthyosaurus"
     }
 
-    SupportAction {
-        icon: SupportIcon.Weblate
-        title: qsTr("Translate on %1").arg("Weblate")
-        description: qsTr("Help with translating this app in as many " +
-                          "languages as possible.")
-        link: "https://hosted.weblate.org/projects/harbour-jubilee"
-    }
+    // SupportAction {
+    //     icon: SupportIcon.Weblate
+    //     title: qsTr("Translate on %1").arg("Weblate")
+    //     description: qsTr("Help with translating this app in as many " +
+    //                       "languages as possible.")
+    //     link: "https://hosted.weblate.org/projects/harbour-jubilee"
+    // }
 
     SupportAction {
         icon: SupportIcon.Git
-        title: qsTr("Develop on %1").arg("GitHub")
+        title: qsTr("Develop on %1").arg("Codeberg")
         description: qsTr("Support with maintenance and packaging, " +
                           "write code, or provide valuable bug reports.")
-        link: "https://github.com/ichthyosaurus/harbour-jubilee"
+        link: "https://codeberg.org/ichthyosaurus/harbour-jubilee"
     }
 
     DetailsDrawer {
