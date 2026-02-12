@@ -244,16 +244,6 @@
         <translation>Belilah secangkir kopi, sepotong pizza, atau tiket ke teater.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Terjemahkan di %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Bantu terjemahkan aplikasi ini ke dalam banyak bahasa sebanyak mungkin.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Kembangkan di %1</translation>
@@ -614,7 +604,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">Tentang</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

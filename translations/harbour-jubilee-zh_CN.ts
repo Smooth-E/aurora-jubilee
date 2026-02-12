@@ -244,16 +244,6 @@
         <translation>付我一杯咖啡、或者是一片披萨、亦或是一张电影票的价钱吧。</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>在%1上翻译</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>帮助我们将应用翻译成更多的语言。</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>在%1上开发</translation>
@@ -614,7 +604,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">关于</translation>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

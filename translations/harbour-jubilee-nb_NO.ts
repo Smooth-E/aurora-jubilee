@@ -251,16 +251,6 @@
         <translation>Betal prisen for en kaffe, pizzastykke, eller kinobillett.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Bistå oversettelsen på %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Hjelp til å oversette programmet til så mange språk som mulig.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Utvikling på %1</translation>
@@ -511,12 +501,12 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>Database upgrade failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Databaseoppgradering feilet</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>An error occurred while upgrading the database from version %1 to version %2. Please report this issue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Det oppsto en feil under oppgradering av databasen fra versjon %1 til versjon %2. Vennligst rapporter dette problemet.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
@@ -541,32 +531,32 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>Invalid database version</source>
-        <translation type="unfinished"></translation>
+        <translation>Ugyldig databaseversjon</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>The app cannot start because the database has version %1 but only version %2 is supported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Appen kan ikke starte fordi databasen har versjon %1, men bare versjon %2 støttes.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Database Maintenance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vedlikehold av database</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Please be patient and allow up to 30 seconds for this.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vær tålmodig og beregn opptil 30 sekunder for dette.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>Database issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Databaseproblem</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>An unexpected issue occurred in the database. Try restarting the app.</source>
-        <translation type="unfinished"></translation>
+        <translation>Det oppsto et uventet problem i databasen. Prøv å starte appen på nytt.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="38"/>
@@ -623,7 +613,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

@@ -251,16 +251,6 @@
         <translation>Donami una tazza di caffè, un pezzo di pizza o un biglietto per il cinema.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Traduci su %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Aiutaci traducendo questa applicazione in quante più lingue possibile.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Sviluppato su %1</translation>
@@ -623,7 +613,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">In riguardo</translation>
+        <translation>In riguardo</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

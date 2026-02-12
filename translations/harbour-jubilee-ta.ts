@@ -251,16 +251,6 @@
         <translation>ஒரு கப் காபி, ஒரு துண்டு பீச்சா அல்லது தியேட்டருக்கு டிக்கெட் ஆகியவற்றின் அளவு செலுத்துங்கள்.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>வெப்லேட்டில் மொழிபெயர்க்கவும்</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>இந்த பயன்பாட்டை முடிந்தவரை பல மொழிகளில் மொழிபெயர்க்க உதவுங்கள்.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>கிட்அப்பில் உருவாக்குங்கள்</translation>
@@ -551,12 +541,12 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Database Maintenance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">தரவுத்தள பராமரிப்பு</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Please be patient and allow up to 30 seconds for this.</source>
-        <translation type="unfinished"></translation>
+        <translation>தயவுசெய்து பொறுமையாக இருங்கள், இதற்காக 30 வினாடிகள் வரை அனுமதிக்கவும்.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
@@ -623,7 +613,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">பற்றி</translation>
+        <translation>பற்றி</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

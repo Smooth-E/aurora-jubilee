@@ -258,16 +258,6 @@
         <translation>Можете пожертвувати суму, що дорівнює чашці кави, шматку піци або квитку в театр.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Переклад на %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Допоможіть перекласти цей додаток якомога більшою кількістю мов.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Розробка на %1</translation>
@@ -520,12 +510,12 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>Database upgrade failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося оновити базу даних</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>An error occurred while upgrading the database from version %1 to version %2. Please report this issue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Під час оновлення бази даних з версії %1 до версії %2 сталася помилка. Будь ласка, повідомте про цю проблему.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
@@ -550,32 +540,32 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>Invalid database version</source>
-        <translation type="unfinished"></translation>
+        <translation>Недійсна версія бази даних</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>The app cannot start because the database has version %1 but only version %2 is supported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Програму неможливо запустити, оскільки база даних має версію %1, але підтримується лише версія %2.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Database Maintenance</source>
-        <translation type="unfinished"></translation>
+        <translation>Обслуговування бази даних</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Please be patient and allow up to 30 seconds for this.</source>
-        <translation type="unfinished"></translation>
+        <translation>Будь ласка, будьте терплячими та виділіть для цього до 30 секунд.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>Database issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Проблема з базою даних</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>An unexpected issue occurred in the database. Try restarting the app.</source>
-        <translation type="unfinished"></translation>
+        <translation>У базі даних виникла неочікувана проблема. Спробуйте перезапустити програму.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="38"/>
@@ -632,7 +622,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">Про застосунок</translation>
+        <translation>Про застосунок</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

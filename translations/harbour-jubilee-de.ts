@@ -251,16 +251,6 @@
         <translation>Spende den Betrag für eine Tasse Kaffee, ein Stück Pizza oder einen Theaterbesuch.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Übersetze auf %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Hilf dabei, die App in so viele Sprachen wie möglich zu übersetzen.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Entwickle auf %1</translation>
@@ -511,12 +501,12 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>Database upgrade failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Datenbank-Aktualisierung fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>An error occurred while upgrading the database from version %1 to version %2. Please report this issue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Während der Datenbank-Aktualisierung von Version %1 auf Version %2 ist ein Fehler aufgetreten. Bitte melden Sie dieses Problem.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
@@ -541,32 +531,32 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>Invalid database version</source>
-        <translation type="unfinished"></translation>
+        <translation>Ungültige Datenbankversion</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>The app cannot start because the database has version %1 but only version %2 is supported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die App kann nicht gestartet werden, weil die Datenbankversion nicht unterstützt wird (%1 gefunden, aber %2 erwartet).</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Database Maintenance</source>
-        <translation type="unfinished"></translation>
+        <translation>Datenbank-Pflege</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Please be patient and allow up to 30 seconds for this.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte warten Sie einen Moment und gewähren Sie rund 30 Sekunden für den Vorgang.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>Database issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Datenbankproblem</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>An unexpected issue occurred in the database. Try restarting the app.</source>
-        <translation type="unfinished"></translation>
+        <translation>In der Datenbank ist ein unerwarteter Fehler aufgetreten. Versuchen Sie, die App neuzustarten.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="38"/>

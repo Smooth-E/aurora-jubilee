@@ -258,16 +258,6 @@
         <translation>Přispějte cenou za kávu, dílek pizzy nebo lístek do kina.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Přeložit na %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Pomožte s překladem této aplikace do tolika jazyků, kolik je to jen možné.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Vývoj na %1u</translation>
@@ -632,7 +622,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">O aplikaci</translation>
+        <translation>O aplikaci</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

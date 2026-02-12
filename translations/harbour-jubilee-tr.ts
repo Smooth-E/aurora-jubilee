@@ -244,16 +244,6 @@
         <translation>Bir fincan kahve, bir dilim pizza ya da bir tiyatro bileti bedelini ödeyin.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>%1&apos;te çevir</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Bu uygulamanın mümkün olduğunca çok dile çevrilmesine yardımcı olun.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>%1&apos;da geliştirin</translation>
@@ -542,12 +532,12 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Database Maintenance</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Veritabanı Bakımı</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Please be patient and allow up to 30 seconds for this.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Lütfen sabırlı olun ve bunun için 30 saniye kadar bekleyin.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
@@ -614,7 +604,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">Hakkında</translation>
+        <translation>Hakkında</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

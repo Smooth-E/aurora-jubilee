@@ -185,7 +185,7 @@
     <message>
         <location filename="../qml/modules/Opal/LinkHandler/private/ExternalUrlPage.qml" line="86"/>
         <source>You are using a mobile data connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>أنت تستخدم بيانات الهاتف.</translation>
     </message>
 </context>
 <context>
@@ -277,16 +277,6 @@
         <location filename="../qml/MySupportDialog.qml" line="14"/>
         <source>Pay the amount of a cup of coffee, a slice of pizza, or a ticket to the theater.</source>
         <translation>ادفع كمية كوب قهوة, شريحة بيتزا, او حتى تذكرة الى المسرح.</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>ترجم على %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>ساعد في ترجمة هذا التطبيق الى اكبر عدد ممكن من اللغات.</translation>
     </message>
     <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
@@ -383,7 +373,7 @@
     <message>
         <location filename="../qml/modules/Opal/About/private/LicensePage.qml" line="40"/>
         <source>You are using a mobile data connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>أنت تستخدم بيانات الهاتف.</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/modules/Opal/About/private/LicensePage.qml" line="45"/>
@@ -659,7 +649,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">عن</translation>
+        <translation>عن</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

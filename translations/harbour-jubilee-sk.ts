@@ -258,16 +258,6 @@
         <translation>Zaplaťte obnos za šálku kávy, kúsok pizze alebo lístok do divadla.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Preklad na %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Pomôžte s prekladom tejto aplikácie do čo najväčšieho počtu jazykov.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Vývoj na %1</translation>
@@ -632,7 +622,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">O aplikácii</translation>
+        <translation>O aplikácii</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

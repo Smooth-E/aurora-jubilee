@@ -258,16 +258,6 @@
         <translation>Wpłać równoważność filiżanki kawy, kawałka pizzy lub biletu do teatru.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Tłumacz na %1</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Pomóż z tłumaczeniem tej aplikacji do jak największej ilości języków.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>Rozwój na %1ie</translation>
@@ -632,7 +622,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">O tej aplikacji</translation>
+        <translation>O tej aplikacji</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>

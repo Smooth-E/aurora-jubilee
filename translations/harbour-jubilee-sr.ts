@@ -258,16 +258,6 @@
         <translation>Platite cenu šolje kafe, parčeta pice, ili karte za pozorište.</translation>
     </message>
     <message>
-        <location filename="../qml/MySupportDialog.qml" line="21"/>
-        <source>Translate on %1</source>
-        <translation>Prevodite na weblate</translation>
-    </message>
-    <message>
-        <location filename="../qml/MySupportDialog.qml" line="22"/>
-        <source>Help with translating this app in as many languages as possible.</source>
-        <translation>Pomozite sa prevodom ovo aplikacija na najviše moguće jezika.</translation>
-    </message>
-    <message>
         <location filename="../qml/MySupportDialog.qml" line="29"/>
         <source>Develop on %1</source>
         <translation>razvoj na %1u</translation>
@@ -632,7 +622,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>
         <source>About</source>
-        <translation type="unfinished">o</translation>
+        <translation>o</translation>
     </message>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>
