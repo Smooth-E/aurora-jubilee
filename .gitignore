@@ -1,6 +1,6 @@
 # This file is part of harbour-jubilee.
 # SPDX-FileCopyrightText: 2022-2026 Mirian Margiani
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 build*
 *.user
@@ -8,3 +8,4 @@ build*
 icon-src/raw
 .directory
 __pycache__
+dist/packages

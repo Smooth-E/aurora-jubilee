@@ -1,0 +1,43 @@
+version = 1
+SPDX-PackageName = "harbour-jubilee"
+SPDX-PackageSupplier = "Mirian Margiani <mixosaurus+ichthyo@pm.me>"
+SPDX-PackageDownloadLocation = "https://codeberg.org/ichthyosaurus/harbour-jubilee"
+
+[[annotations]]
+path = "translations/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013-2023 this project's translations contributors"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "rpm/harbour-**.spec"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Mirian Margiani"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+SPDX-FileComment = "This file is generated from [this file's name].yaml and shares copyright with it."
+
+[[annotations]]
+path = ["icons/**", "qml/images/**", "dist/harbour-**.png"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Mirian Margiani"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "These files are generated from the sources at icon-src/*."
+
+[[annotations]]
+path = "icon-src/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Mirian Margiani"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "These files contain proper Dublin Core licensing metadata."
+
+[[annotations]]
+path = "TRANSLATORS.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "translations contributors"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = ["qml/py/libs/dateutil/**", "qml/py/libs/dateutil.METADATA"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Gustavo Niemeyer, Paul Ganssle"
+SPDX-License-Identifier = "BSD-3-Clause AND Apache-2.0"

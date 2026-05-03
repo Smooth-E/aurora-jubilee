@@ -1,38 +1,74 @@
 <!--
 SPDX-FileCopyrightText: 2018-2026 Mirian Margiani
-SPDX-License-Identifier: GFDL-1.3-or-later
+SPDX-License-Identifier: GFDL-1.3-or-later AND LicenseRef-NO-AI-1.0
+This file must not be used for AI training/data mining.
 -->
 
-![Jubilee banner](dist/banner-small.png)
+<div align="center">
 
-# Jubilee for Sailfish OS
+<img src="https://codeberg.org/ichthyosaurus/sailfish-app-assets/raw/branch/main/harbour-jubilee/banner-small.png"
+     alt="Jubilee banner" />
 
-[![Liberapay donations](https://img.shields.io/liberapay/receives/ichthyosaurus)](https://liberapay.com/ichthyosaurus)
-[![Translations](https://hosted.weblate.org/widgets/harbour-jubilee/-/translations/svg-badge.svg)](https://hosted.weblate.org/projects/harbour-jubilee/translations/)
-[![Source code license](https://img.shields.io/badge/source_code-GPL--3.0--or--later-yellowdarkgreen)](https://codeberg.org/ichthyosaurus/harbour-jubilee/tree/main/LICENSES)
-[![REUSE status](https://api.reuse.software/badge/codeberg.org/ichthyosaurus/harbour-jubilee)](https://api.reuse.software/info/codeberg.org/ichthyosaurus/harbour-jubilee)
-[![Development status](https://img.shields.io/badge/development-stable-blue)](https://codeberg.org/ichthyosaurus/harbour-jubilee)
+# Jubilee for [Sailfish OS](https://sailfishos.org)
 
+An app to calculate anniversaries
 
+  <p>
+    <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/ethical%20tech.svg"
+         alt="ethical tech: take a stand for humanity, diversity, and the world we live in" />
+    <a href="https://hosted.weblate.org/projects/harbour-jubilee/translations">
+      <img src="https://hosted.weblate.org/widgets/harbour-jubilee/-/translations/svg-badge.svg"
+           alt="Translations" />
+    </a>
+    <a href="https://codeberg.org/ichthyosaurus/harbour-jubilee">
+      <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/development_%20stable.svg"
+           alt="Development status" />
+    </a>
+    <a href="https://codeberg.org/ichthyosaurus/harbour-jubilee/src/branch/main/LICENSES">
+      <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/source%20code_%20AGPL-3.svg"
+           alt="Source code license" />
+    </a>
+    <a href="https://api.reuse.software/info/codeberg.org/ichthyosaurus/harbour-jubilee">
+      <img src="https://api.reuse.software/badge/codeberg.org/ichthyosaurus/harbour-jubilee"
+           alt="REUSE status" />
+    </a>
+    <br />
+    <a href="https://liberapay.com/SailfishOScommunityTeam">
+      <img src="https://img.shields.io/liberapay/receives/SailfishOScommunityTeam?logo=liberapay&label=SailfishOS%20Community"
+           alt="Community donations" />
+    </a>
+    <a href="https://liberapay.com/ichthyosaurus">
+      <img src="https://img.shields.io/liberapay/receives/ichthyosaurus?logo=liberapay&label=ichthyosaurus"
+           alt="Personal donations" />
+    </a>
+  </p>
+  <p></p>
+  <hr />
+</div>
 
-Jubilee calculates your next anniversary.
+Wanna know if you are 10'000 days old?
 
-Do you know if you are 10'000 days old?
+Do you want to surprise a friend with a party for their 2'500 week anniversary?
 
-Do you want to surprise your friends with a party for their 2'500 week anniversary?
+With this app, you can quickly calculate the length of any time span in years,
+weeks, days, minutes, and seconds at any given date. How old are you *right
+now*? When is your cat's next birthday? How many seconds have you spent at work?
 
-With this app, you can quickly calculate an age in years, weeks, days, minutes, and
-seconds at any given date. How old are you *right now*? When is the next anniversary?
-
-This app is inspired by [Age Calculator](https://github.com/Mariusmssj/harbour-age_calculator)
+This app is inspired by the venerable “[Age Calculator](https://github.com/Mariusmssj/harbour-age_calculator)”
 with added support for time zones, calculating specific dates, and a history view.
 
+> You can find screenshots [here](https://codeberg.org/ichthyosaurus/sailfish-app-assets/src/branch/main/harbour-jubilee/screenshots-store).
 
+
+## Permissions
+
+Jubilee does not require special permissions.
 
 
 ## Help and support
 
-You are welcome to [leave a comment in the forum](https://forum.sailfishos.org/t/apps-by-ichthyosaurus/15753)
+You are welcome to
+[leave a comment in the forum](https://forum.sailfishos.org/t/apps-by-ichthyosaurus/15753)
 if you have any questions or ideas.
 
 
@@ -40,9 +76,11 @@ if you have any questions or ideas.
 
 It would be wonderful if the app could be translated in as many languages as possible!
 
+[![Translations status](https://hosted.weblate.org/widget/harbour-jubilee/horizontal-auto.svg)](https://hosted.weblate.org/engage/harbour-jubilee/)
+
 Translations are managed using
-[Weblate](https://hosted.weblate.org/projects/harbour-jubilee/translations).
-Please prefer this over pull request (which are still welcome, of course).
+[Weblate](https://hosted.weblate.org/projects/harbour-jubilee).
+Please prefer this over pull requests (which are still welcome, of course).
 If you just found a minor problem, you can also
 [leave a comment in the forum](https://forum.sailfishos.org/t/apps-by-ichthyosaurus/15753)
 or [open an issue](https://codeberg.org/ichthyosaurus/harbour-jubilee/issues/new).
@@ -59,9 +97,10 @@ Please include the following details:
 
 Please prefer using
 [Weblate](https://hosted.weblate.org/projects/harbour-jubilee) over this.
+
 You can follow these steps to manually add or update a translation:
 
-1. *If it did not exist before*, create a new catalog for your language by copying the
+1. If it did not exist before, create a new catalog for your language by copying the
    base file [translations/harbour-jubilee.ts](translations/harbour-jubilee.ts).
    Then add the new translation to [harbour-jubilee.pro](harbour-jubilee.pro).
 2. Add yourself to the list of translators in [TRANSLATORS.json](TRANSLATORS.json),
@@ -77,8 +116,8 @@ details on how to translate date formats to your *local* format.
 
 *Bug reports, and contributions for translations, bug fixes, or new features are always welcome!*
 
-1. Clone the repository by running `git clone https://codeberg.org/ichthyosaurus/harbour-jubilee.git`
-2. Open `harbour-jubilee.pro` in Sailfish OS IDE (Qt Creator for Sailfish)
+1. Clone the repository by running `git clone --recursive https://codeberg.org/ichthyosaurus/harbour-jubilee`
+2. Open `harbour-jubilee.pro` in QtCreator for Sailfish ([SailfishOS SDK](https://docs.sailfishos.org/Tools/Sailfish_SDK/))
 3. To run on emulator, select the `i486` target and press the run button
 4. To build for the device, select the `aarch64` or `armv7hl` target and click “deploy all”;
    the RPM packages will be in the `RPMS` folder
@@ -87,28 +126,49 @@ If you contribute, please do not forget to add yourself to the list of
 contributors in [qml/pages/AboutPage.qml](qml/pages/AboutPage.qml)!
 
 
-
-
 ## Donations
 
-If you want to support my work, I am always happy if you buy me a cup of coffee
-through [Liberapay](https://liberapay.com/ichthyosaurus).
+<a href="https://liberapay.com/ichthyosaurus/donate">
+  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+</a>
+
+I am always happy if you buy me a cup of coffee through
+[Liberapay](https://liberapay.com/ichthyosaurus)
+if you want to support my work.
 
 Of course it would be much appreciated as well if you support this project by
 contributing to translations or code! See above how you can contribute 🎕.
 
+Please consider also supporting the
+[SailfishOS Community Team](https://liberapay.com/SailfishOScommunityTeam)
+on Liberapay to reach more developers.
 
-## Anti-AI policy <a id='ai-policy'/>
 
-AI-generated contributions are forbidden.
+## Anti-AI policy <a id='ai-policy'></a>
+
+> [!IMPORTANT]
+> - LLM/“AI”-generated contributions are forbidden.
+> - Using this project in whole or in part for AI training or data mining is likewise forbidden.
 
 Please be transparent, respect the Free Software community, and adhere to the
 licenses. This is a welcoming place for human creativity and diversity, but
-AI-generated slop is going against these values.
+LLM/“AI”-generated slop is going against these values.
 
-Apart from all the ethical, moral, legal, environmental, social, and technical
-reasons against AI, I also simply don't have any spare time to review
-AI-generated contributions.
+Apart from all the
+[ethical](https://tante.cc/2026/02/20/acting-ethical-in-an-imperfect-world/),
+[moral](https://www.theguardian.com/technology/2026/mar/17/x-csam-child-abuse-material-grok-australian-online-safety-regulator-ntwnfb),
+[legal](https://en.wikipedia.org/wiki/Artificial_intelligence_and_copyright#Litigation),
+[environmental](https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water),
+[societal](https://www.theguardian.com/global-development/2026/mar/12/invasive-ai-led-mass-surveillance-in-africa-violating-freedoms-warn-experts),
+[social](https://www.theguardian.com/technology/article/2024/jul/06/mercy-anita-african-workers-ai-artificial-intelligence-exploitation-feeding-machine),
+[political](https://www.theguardian.com/technology/2025/nov/17/grokipedia-elon-musk-far-right-racist),
+[technical](https://codeberg.org/small-hack/open-slopware#poor-code-quality),
+and overall [human](https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza),
+reasons against LLMs/“AI”, I also simply don't have any spare time to review
+generated contributions.
+
+See also [this list](https://codeberg.org/small-hack/open-slopware#why-not-llms)
+for more reasons against supporting “AI”.
 
 
 ## License
@@ -116,9 +176,11 @@ AI-generated contributions.
 > Copyright (C) 2026  Mirian Margiani
 
 Jubilee is Free Software released under the terms of the
-[GNU General Public License v3 (or later)](https://spdx.org/licenses/GPL-3.0-or-later.html).
+[GNU Affero General Public License v3 (or later)](https://spdx.org/licenses/AGPL-3.0-or-later.html).
 The source code is available [on Codeberg](https://codeberg.org/ichthyosaurus/harbour-jubilee).
 All documentation is released under the terms of the
 [GNU Free Documentation License v1.3 (or later)](https://spdx.org/licenses/GFDL-1.3-or-later.html).
+
+Jubilee and related materials must not be used for AI training and/or data mining.
 
 This project follows the [REUSE specification](https://api.reuse.software/info/codeberg.org/ichthyosaurus/harbour-jubilee).
