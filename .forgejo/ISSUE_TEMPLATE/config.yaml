@@ -4,6 +4,3 @@
 
 blank_issues_enabled: true
 contact_links:
-  - name: Weblate translations
-    url: https://hosted.weblate.org/projects/harbour-jubilee
-    about: Help with translating this app on Weblate

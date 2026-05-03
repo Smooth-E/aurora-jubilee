@@ -16,10 +16,6 @@ An app to calculate anniversaries
   <p>
     <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/ethical%20tech.svg"
          alt="ethical tech: take a stand for humanity, diversity, and the world we live in" />
-    <a href="https://hosted.weblate.org/projects/harbour-jubilee/translations">
-      <img src="https://hosted.weblate.org/widgets/harbour-jubilee/-/translations/svg-badge.svg"
-           alt="Translations" />
-    </a>
     <a href="https://codeberg.org/ichthyosaurus/harbour-jubilee">
       <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/development_%20stable.svg"
            alt="Development status" />
@@ -76,27 +72,12 @@ if you have any questions or ideas.
 
 It would be wonderful if the app could be translated in as many languages as possible!
 
-[![Translations status](https://hosted.weblate.org/widget/harbour-jubilee/horizontal-auto.svg)](https://hosted.weblate.org/engage/harbour-jubilee/)
-
-Translations are managed using
-[Weblate](https://hosted.weblate.org/projects/harbour-jubilee).
-Please prefer this over pull requests (which are still welcome, of course).
 If you just found a minor problem, you can also
-[leave a comment in the forum](https://forum.sailfishos.org/t/apps-by-ichthyosaurus/15753)
-or [open an issue](https://codeberg.org/ichthyosaurus/harbour-jubilee/issues/new).
-
-Please include the following details:
-
-1. the language you were using
-2. where you found the error
-3. the incorrect text
-4. the correct translation
+[open an issue](https://codeberg.org/ichthyosaurus/harbour-jubilee/issues/new).
 
 
 ### Manually updating translations
 
-Please prefer using
-[Weblate](https://hosted.weblate.org/projects/harbour-jubilee) over this.
 
 You can follow these steps to manually add or update a translation:
 
