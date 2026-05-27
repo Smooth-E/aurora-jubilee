@@ -27,7 +27,7 @@
 <context>
     <name>AgeViewItem</name>
     <message numerus="yes">
-        <location filename="../qml/components/AgeViewItem.qml" line="64"/>
+        <location filename="../qml/components/AgeViewItem.qml" line="68"/>
         <source>year(s)</source>
         <translation>
             <numerusform>год</numerusform>
@@ -36,7 +36,7 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/components/AgeViewItem.qml" line="66"/>
+        <location filename="../qml/components/AgeViewItem.qml" line="70"/>
         <source>month(s)</source>
         <translation>
             <numerusform>месяц</numerusform>
@@ -45,7 +45,7 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/components/AgeViewItem.qml" line="68"/>
+        <location filename="../qml/components/AgeViewItem.qml" line="72"/>
         <source>week(s)</source>
         <translation>
             <numerusform>неделя</numerusform>
@@ -54,7 +54,7 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/components/AgeViewItem.qml" line="70"/>
+        <location filename="../qml/components/AgeViewItem.qml" line="74"/>
         <source>day(s)</source>
         <translation>
             <numerusform>день</numerusform>
@@ -63,7 +63,7 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/components/AgeViewItem.qml" line="72"/>
+        <location filename="../qml/components/AgeViewItem.qml" line="76"/>
         <source>hour(s)</source>
         <translation>
             <numerusform>час</numerusform>
@@ -72,7 +72,7 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/components/AgeViewItem.qml" line="74"/>
+        <location filename="../qml/components/AgeViewItem.qml" line="78"/>
         <source>minute(s)</source>
         <translation>
             <numerusform>минута</numerusform>
@@ -92,23 +92,23 @@
 <context>
     <name>CalcView</name>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="67"/>
-        <location filename="../qml/pages/CalcView.qml" line="144"/>
+        <location filename="../qml/pages/CalcView.qml" line="59"/>
+        <location filename="../qml/pages/CalcView.qml" line="140"/>
         <source>Calculations</source>
         <translation>Разница во времени</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="71"/>
+        <location filename="../qml/pages/CalcView.qml" line="63"/>
         <source>Dates</source>
         <translation>Даты</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="76"/>
+        <location filename="../qml/pages/CalcView.qml" line="68"/>
         <source>Selected date</source>
         <translation>Дата события</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="102"/>
+        <location filename="../qml/pages/CalcView.qml" line="96"/>
         <source>Projected date</source>
         <translation>Дата в будущем</translation>
     </message>
@@ -118,22 +118,27 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="112"/>
+        <location filename="../qml/pages/CalcView.qml" line="106"/>
         <source>Pick a date</source>
         <translation>Выберите дату</translation>
     </message>
     <message>
-        <location filename="../qml/pages/CalcView.qml" line="119"/>
+        <location filename="../qml/pages/CalcView.qml" line="113"/>
         <source>Set to “now”</source>
         <translation>Использовать &quot;сейчас&quot;</translation>
     </message>
 </context>
 <context>
-    <name>CoverPage</name>
+    <name>CalculationCover</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="13"/>
-        <source>Jubilee</source>
-        <translation>Jubilee</translation>
+        <location filename="../qml/cover/CalculationCover.qml" line="22"/>
+        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;Since&lt;/font&gt;&lt;/b&gt; %2</source>
+        <translation>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;От&lt;/font&gt;&lt;/b&gt; %2</translation>
+    </message>
+    <message>
+        <location filename="../qml/cover/CalculationCover.qml" line="28"/>
+        <source>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;until&lt;/font&gt;&lt;/b&gt; %2</source>
+        <translation>&lt;b&gt;&lt;font color=&quot;%1&quot;&gt;до&lt;/font&gt;&lt;/b&gt; %2</translation>
     </message>
 </context>
 <context>
@@ -235,12 +240,12 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="23"/>
+        <location filename="../qml/pages/MainPage.qml" line="24"/>
         <source>Calculations</source>
         <translation>Подсчет</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="30"/>
+        <location filename="../qml/pages/MainPage.qml" line="31"/>
         <source>History</source>
         <translation>История</translation>
     </message>
@@ -632,6 +637,19 @@ Please restart the app and check the logs.</source>
     </message>
 </context>
 <context>
+    <name>WelcomeCover</name>
+    <message>
+        <location filename="../qml/cover/WelcomeCover.qml" line="24"/>
+        <source>Welcome to Jubilee!</source>
+        <translation>Добро пожаловать!</translation>
+    </message>
+    <message>
+        <location filename="../qml/cover/WelcomeCover.qml" line="28"/>
+        <source>Pick a pair of dates to start calculating.</source>
+        <translation>Выберите пару дат, чтобы начать подсчет.</translation>
+    </message>
+</context>
+<context>
     <name>dates</name>
     <message>
         <location filename="../qml/js/dates.js" line="11"/>
@@ -679,7 +697,7 @@ Please restart the app and check the logs.</source>
 <context>
     <name>moe.smoothie.jubilee</name>
     <message>
-        <location filename="../qml/moe.smoothie.jubilee.qml" line="23"/>
+        <location filename="../qml/moe.smoothie.jubilee.qml" line="30"/>
         <source>Jubilee</source>
         <translation>Юбилей</translation>
     </message>

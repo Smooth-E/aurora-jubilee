@@ -1,6 +1,7 @@
 /*
  * This file is part of harbour-jubilee.
  * SPDX-FileCopyrightText: 2022-2026 Mirian Margiani
+ * SPDX-FileCopyrightText: 2026 Smooth-E
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -18,6 +19,12 @@ import "py"
 ApplicationWindow {
     id: app
 
+    readonly property bool isLandscape: orientation | Orientation.LandscapeMask
+    readonly property real coverTopPadding: isLandscape ? Theme.paddingLarge : Theme.paddingMedium
+
+    property string coverStartDateText
+    property string coverProjectedDateText
+
     property QtObject wallClock
     property bool haveWallClock: wallClock != null
     readonly property string appName: qsTr("Jubilee")
@@ -26,6 +33,12 @@ ApplicationWindow {
     property string currentDate
     property string currentTz
 
+    property string ageInMinutes: M.value(0).toString()
+    property var ageInWall: ({
+        years: 0, months: 0, days: 0, hours: 0, minutes: 0
+    })
+
+    signal coverAction()
     signal pickNewDate()
     signal switchToCalcView()
     signal setNewDate(var date, var tz)
@@ -73,9 +86,18 @@ ApplicationWindow {
     }
 
     initialPage: Component { MainPage { } }
-    cover: Qt.resolvedUrl("cover/CoverPage.qml")
+    cover: Qt.resolvedUrl(!!app.currentDate ? "cover/CalculationCover.qml" : "cover/WelcomeCover.qml")
     allowedOrientations: Orientation.All
     _defaultPageOrientations: Orientation.All
+
+    onCoverAction: pickNewDate()
+
+    onNewAgeCalculated: {
+        ageInMinutes = result.minutes
+        ageInWall = result.wall
+
+        console.log("new age calculated:", ageInMinutes, JSON.stringify(ageInWall))
+    }
 
     A.ChangelogNews {
         changelogList: Qt.resolvedUrl("Changelog.qml")

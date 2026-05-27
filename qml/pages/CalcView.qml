@@ -1,6 +1,7 @@
 /*
  * This file is part of harbour-jubilee.
  * SPDX-FileCopyrightText: 2022-2026 Mirian Margiani
+ * SPDX-FileCopyrightText: 2026 Smooth-E
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -19,19 +20,10 @@ TabItem {
     allowDeletion: false
 
     property bool haveStartDate: !!selectedPicker.date
-    property string ageInMinutes: M.value(0).toString()
-    property var ageInWall: ({
-        years: 0, months: 0, days: 0, hours: 0, minutes: 0
-    })
 
     Connections {
         target: app
-        onNewAgeCalculated: {
-            ageInMinutes = result.minutes
-            ageInWall = result.wall
 
-            console.log("new age calculated:", ageInMinutes, JSON.stringify(ageInWall))
-        }
         onNewDateProjected: {
             projectedPicker.isUserDefined = true
             projectedPicker.tz = tz
@@ -74,6 +66,8 @@ TabItem {
             DateTimePickerCombo {
                 id: selectedPicker
                 description: qsTr("Selected date")
+
+                onTextChanged: app.coverStartDateText = date ? text : ""
 
                 onDateChanged: {
                     app.setNewDate(date, tz)
@@ -124,6 +118,8 @@ TabItem {
                     }
                 }
 
+                onTextChanged: app.coverProjectedDateText = text
+
                 onDateChanged: {
                     if (haveStartDate) {
                         app.calculateAge(selectedPicker.date, selectedPicker.tz,
@@ -147,8 +143,8 @@ TabItem {
             AgeViewItem {
                 enabled: haveStartDate
                 useWallTime: true
-                ageInWall: root.ageInWall
-                ageInMinutes: root.ageInMinutes
+                ageInWall: app.ageInWall
+                ageInMinutes: app.ageInMinutes
 
                 components: ListModel {
                     ListElement {
@@ -187,8 +183,8 @@ TabItem {
             AgeViewItem {
                 enabled: haveStartDate
                 useWallTime: true
-                ageInWall: root.ageInWall
-                ageInMinutes: root.ageInMinutes
+                ageInWall: app.ageInWall
+                ageInMinutes: app.ageInMinutes
 
                 components: ListModel {
                     ListElement {
@@ -220,7 +216,7 @@ TabItem {
 
             AgeViewItem {
                 enabled: haveStartDate
-                ageInMinutes: root.ageInMinutes
+                ageInMinutes: app.ageInMinutes
 
                 components: ListModel {
                     ListElement {
@@ -252,7 +248,7 @@ TabItem {
 
             AgeViewItem {
                 enabled: haveStartDate
-                ageInMinutes: root.ageInMinutes
+                ageInMinutes: app.ageInMinutes
 
                 components: ListModel {
                     ListElement {
@@ -278,7 +274,7 @@ TabItem {
 
             AgeViewItem {
                 enabled: haveStartDate
-                ageInMinutes: root.ageInMinutes
+                ageInMinutes: app.ageInMinutes
 
                 components: ListModel {
                     ListElement {
@@ -298,7 +294,7 @@ TabItem {
 
             AgeViewItem {
                 enabled: haveStartDate
-                ageInMinutes: root.ageInMinutes
+                ageInMinutes: app.ageInMinutes
 
                 components: ListModel {
                     ListElement {

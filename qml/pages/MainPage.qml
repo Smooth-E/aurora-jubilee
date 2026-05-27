@@ -1,6 +1,7 @@
 /*
  * This file is part of harbour-jubilee.
  * SPDX-FileCopyrightText: 2022-2026 Mirian Margiani
+ * SPDX-FileCopyrightText: 2026 Smooth-E
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -36,8 +37,8 @@ Page {
 
     Connections {
         target: app
-        onSwitchToCalcView: {
-            tabView.currentIndex = 0
-        }
+
+        onSwitchToCalcView: tabView.currentIndex = 0
+        onCoverAction: tabView.currentIndex = 0
     }
 }

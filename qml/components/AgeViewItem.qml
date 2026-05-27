@@ -1,6 +1,7 @@
 /*
  * This file is part of harbour-jubilee.
  * SPDX-FileCopyrightText: 2026 Mirian Margiani
+ * SPDX-FileCopyrightText: 2026 Smooth-E
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
@@ -12,6 +13,8 @@ import "../js/math.js" as M
 PaddedDelegate {
     id: root
 
+    readonly property alias text: label.text
+
     property bool useWallTime: false
     property var ageInWall: ({
         years: 0, months: 0, days: 0, hours: 0, minutes: 0
@@ -19,6 +22,7 @@ PaddedDelegate {
     property string ageInMinutes: M.value(0).toString()
     property ListModel components: ListModel {}
     property var _values: []
+    property bool useFormatting: true
 
     function _setValue(index, newValue) {
         var item = components.get(index)
@@ -77,7 +81,7 @@ PaddedDelegate {
     }
 
     function _updateValues() {
-        var ret = "<center><font size='3'>"
+        var ret = useFormatting ? "<center><font size='3'>" : ""
         var newValues = []
         var count = root.components.count
         var remainder = M.value(ageInMinutes)
@@ -86,16 +90,18 @@ PaddedDelegate {
             var value = 0
             var item = root.components.get(i)
 
-            // set "hour" and "minutes" on a separate line in
-            // a smaller font *if* there are more components in this view
-            var fontSize = '4'
-            if (count >= 3) {
-                if (i == count-2) {
-                    ret += "<font size='0'><br/></font>"
-                }
-                if (i >= count-2) {
-                    fontSize = '2'
-                    ret += "<font size='" + fontSize + "'>"
+            if (useFormatting) {
+                // set "hour" and "minutes" on a separate line in
+                // a smaller font *if* there are more components in this view
+                var fontSize = '4'
+                if (count >= 3) {
+                    if (i == count-2) {
+                        ret += "<font size='0'><br/></font>"
+                    }
+                    if (i >= count-2) {
+                        fontSize = '2'
+                        ret += "<font size='" + fontSize + "'>"
+                    }
                 }
             }
 
@@ -110,22 +116,30 @@ PaddedDelegate {
                 remainder = remainder.mod(item.factor)
             }
 
-            ret += "<font size='" + fontSize + "' color='%1'>" +
-                    M.format(value, 0) +
-                    "</font>&nbsp;"
-            ret += _labelByKey(item.key, M.value(value).toNumber())
-            ret += (i < count-1 ? ",&nbsp;&nbsp;" : "")
+            if (useFormatting) {
+                ret += "<font size='" + fontSize + "' color='%1'>" +
+                        M.format(value, 0) +
+                        "</font>&nbsp;"
+            } else {
+                ret += M.format(value, 0) + " "
+            }
 
-            if (count >= 3 && i >= count-2) {
+            ret += _labelByKey(item.key, M.value(value).toNumber())
+            ret += (i < count-1 ? useFormatting ? ",&nbsp;&nbsp;" : ",\n" : "")
+
+            if (useFormatting && count >= 3 && i >= count-2) {
                 ret += "</font>"
             }
 
             newValues.push(value)
         }
 
-        ret += "</font></center>"
+        if (useFormatting) {
+            ret += "</font></center>"
+        }
+
         _values = newValues
-        label.text = ret.arg(highlighted ? Theme.highlightColor : Theme.primaryColor)
+        label.text = useFormatting ? ret.arg(highlighted ? Theme.highlightColor : Theme.primaryColor) : ret
     }
 
     onClicked: openMenu()
