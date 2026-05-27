@@ -25,11 +25,18 @@ SupportDialog {
     // }
 
     SupportAction {
+        icon: Qt.resolvedUrl("./images/boosty.png")
+        title: qsTr("Support port maintainer")
+        description: qsTr("Support Aurora OS port maintainer by donating through Boosty.")
+        link: "https://boosty.to/smooth-e/donate"
+    }
+
+    SupportAction {
         icon: SupportIcon.Git
-        title: qsTr("Develop on %1").arg("Codeberg")
+        title: qsTr("Develop on %1").arg("GitHub")
         description: qsTr("Support with maintenance and packaging, " +
                           "write code, or provide valuable bug reports.")
-        link: "https://codeberg.org/ichthyosaurus/harbour-jubilee"
+        link: "https://github.com/Smooth-E/aurora-jubilee"
     }
 
     DetailsDrawer {
