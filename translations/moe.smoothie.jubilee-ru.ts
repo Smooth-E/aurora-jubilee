@@ -6,7 +6,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="44"/>
         <source>An app to calculate anniversaries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Приложение для расчета годовщин.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="75"/>
@@ -29,55 +29,55 @@
     <message numerus="yes">
         <location filename="../qml/components/AgeViewItem.qml" line="64"/>
         <source>year(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>год</numerusform>
+            <numerusform>года</numerusform>
+            <numerusform>лет</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/components/AgeViewItem.qml" line="66"/>
         <source>month(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>месяц</numerusform>
+            <numerusform>месяца</numerusform>
+            <numerusform>месяцев</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/components/AgeViewItem.qml" line="68"/>
         <source>week(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>неделя</numerusform>
+            <numerusform>недели</numerusform>
+            <numerusform>недель</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/components/AgeViewItem.qml" line="70"/>
         <source>day(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>день</numerusform>
+            <numerusform>дня</numerusform>
+            <numerusform>дней</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/components/AgeViewItem.qml" line="72"/>
         <source>hour(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>час</numerusform>
+            <numerusform>часа</numerusform>
+            <numerusform>часов</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/components/AgeViewItem.qml" line="74"/>
         <source>minute(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>минута</numerusform>
+            <numerusform>минуты</numerusform>
+            <numerusform>минут</numerusform>
         </translation>
     </message>
 </context>
@@ -95,22 +95,22 @@
         <location filename="../qml/pages/CalcView.qml" line="67"/>
         <location filename="../qml/pages/CalcView.qml" line="144"/>
         <source>Calculations</source>
-        <translation type="unfinished"></translation>
+        <translation>Разница во времени</translation>
     </message>
     <message>
         <location filename="../qml/pages/CalcView.qml" line="71"/>
         <source>Dates</source>
-        <translation type="unfinished"></translation>
+        <translation>Даты</translation>
     </message>
     <message>
         <location filename="../qml/pages/CalcView.qml" line="76"/>
         <source>Selected date</source>
-        <translation type="unfinished"></translation>
+        <translation>Дата события</translation>
     </message>
     <message>
         <location filename="../qml/pages/CalcView.qml" line="102"/>
         <source>Projected date</source>
-        <translation type="unfinished"></translation>
+        <translation>Дата в будущем</translation>
     </message>
     <message>
         <location filename="../qml/pages/CalcView.qml" line="59"/>
@@ -120,12 +120,12 @@
     <message>
         <location filename="../qml/pages/CalcView.qml" line="112"/>
         <source>Pick a date</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите дату</translation>
     </message>
     <message>
         <location filename="../qml/pages/CalcView.qml" line="119"/>
         <source>Set to “now”</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать &quot;сейчас&quot;</translation>
     </message>
 </context>
 <context>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="13"/>
         <source>Jubilee</source>
-        <translation type="unfinished">Jubilee</translation>
+        <translation>Jubilee</translation>
     </message>
 </context>
 <context>
@@ -141,7 +141,7 @@
     <message>
         <location filename="../qml/components/DateTimePickerCombo.qml" line="20"/>
         <source>pick a date</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите дату</translation>
     </message>
 </context>
 <context>
@@ -175,37 +175,37 @@
     <message>
         <location filename="../qml/pages/HistoryView.qml" line="35"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>История</translation>
     </message>
     <message>
         <location filename="../qml/pages/HistoryView.qml" line="40"/>
         <source>No entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Пока ничего</translation>
     </message>
     <message>
         <location filename="../qml/pages/HistoryView.qml" line="41"/>
         <source>Pull down to pick a date.</source>
-        <translation type="unfinished"></translation>
+        <translation>Потяните вниз, чтобы выбрать даты.</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/HistoryView.qml" line="96"/>
         <source>year(s)</source>
         <comment>as in: “age: 50 years”</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>год</numerusform>
+            <numerusform>года</numerusform>
+            <numerusform>лет</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/pages/HistoryView.qml" line="125"/>
         <source>Label</source>
-        <translation type="unfinished"></translation>
+        <translation>Название</translation>
     </message>
     <message>
         <location filename="../qml/pages/HistoryView.qml" line="133"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
 </context>
 <context>
@@ -221,7 +221,7 @@
     <message>
         <location filename="../qml/components/LimitedDatePickerDialog.qml" line="19"/>
         <source>The date cannot be in the future.</source>
-        <translation type="unfinished"></translation>
+        <translation>Дата не может быть в будущем.</translation>
     </message>
 </context>
 <context>
@@ -229,7 +229,7 @@
     <message>
         <location filename="../qml/components/LimitedTimePickerDialog.qml" line="22"/>
         <source>The time has been reset. It cannot be in the future.</source>
-        <translation type="unfinished"></translation>
+        <translation>Время было сброшено, так как нельзя использовать время в будущем.</translation>
     </message>
 </context>
 <context>
@@ -237,12 +237,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="23"/>
         <source>Calculations</source>
-        <translation type="unfinished"></translation>
+        <translation>Подсчет</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="30"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>История</translation>
     </message>
 </context>
 <context>
@@ -510,47 +510,47 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>Database upgrade failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось обновить базу данных</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="44"/>
         <source>An error occurred while upgrading the database from version %1 to version %2. Please report this issue.</source>
-        <translation type="unfinished"></translation>
+        <translation>Во время обновления базы данных с версии %1 до версии %2 произошла ошибка. Пожалуйста, сообщите нам об этой проблеме.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
         <source>Database query failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка запроса к базе данных</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
         <source>An error occurred while accessing the database.</source>
-        <translation type="unfinished"></translation>
+        <translation>Во время доступа к базе данных произошла ошибка.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
         <source>Try restarting the app.</source>
-        <translation type="unfinished"></translation>
+        <translation>Попробуйте перезапустить приложение.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="42"/>
         <source>Please report this issue if it happens again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, расскажите об этой проблеме, если она повторится.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>Invalid database version</source>
-        <translation type="unfinished"></translation>
+        <translation>Неверная версия базы данных</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="46"/>
         <source>The app cannot start because the database has version %1 but only version %2 is supported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка загрузки приложения: найдена база данных версии %1, требуется версия %2.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
         <source>Database Maintenance</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление базой данных</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="48"/>
@@ -560,24 +560,24 @@
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>Database issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка базы данных</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/MessageHandler.qml" line="50"/>
         <source>An unexpected issue occurred in the database. Try restarting the app.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неизвестная ошибка при работе с базой данных. Попробуйте перезапустить приложение.</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="38"/>
         <location filename="../qml/modules/Opal/LocalStorage/private/BlockingOverlay.qml" line="41"/>
         <source>Dismiss</source>
         <comment>as in “hide (dismiss) this popup message”</comment>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <location filename="../qml/modules/Opal/LocalStorage/private/ExtendedBusyLabel.qml" line="32"/>
         <source>Show details</source>
-        <translation type="unfinished"></translation>
+        <translation>Подробнее</translation>
     </message>
 </context>
 <context>
@@ -586,7 +586,8 @@
         <location filename="../qml/py/PythonBackend.qml" line="32"/>
         <source>An error occurred in the Python backend.
 Please restart the app and check the logs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка в Python бэкенде.
+Пожалуйста, перезапустите приложение и проверьте логи.</translation>
     </message>
 </context>
 <context>
@@ -627,7 +628,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="22"/>
         <source>Pick a new date</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать новую дату</translation>
     </message>
 </context>
 <context>
@@ -636,43 +637,43 @@ Please restart the app and check the logs.</source>
         <location filename="../qml/js/dates.js" line="11"/>
         <source>hh&apos;:&apos;mm</source>
         <comment>time only format, as in “10:00 o&apos;clock”, see https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html#format-strings</comment>
-        <translation type="unfinished"></translation>
+        <translation>hh&apos;:&apos;mm</translation>
     </message>
     <message>
         <location filename="../qml/js/dates.js" line="13"/>
         <source>d MMM yyyy, hh&apos;:&apos;mm</source>
         <comment>date and time format, as in “Dec. 1st 2023, 10:00 o&apos;clock”, see https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html#format-strings</comment>
-        <translation type="unfinished"></translation>
+        <translation>d MMM yyyy, hh&apos;:&apos;mm</translation>
     </message>
     <message>
         <location filename="../qml/js/dates.js" line="15"/>
         <source>ddd d MMM yyyy, hh&apos;:&apos;mm</source>
         <comment>full date and time format, as in “Fri., Dec. 1st 2023, 10:00 o&apos;clock”, see https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html#format-strings</comment>
-        <translation type="unfinished"></translation>
+        <translation>ddd d MMM yyyy, hh&apos;:&apos;mm</translation>
     </message>
     <message>
         <location filename="../qml/js/dates.js" line="17"/>
         <source>ddd d MMM yyyy</source>
         <comment>full date format, as in “Fri., Dec. 1st 2023”, see https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html#format-strings</comment>
-        <translation type="unfinished"></translation>
+        <translation>ddd d MMM yyyy</translation>
     </message>
     <message>
         <location filename="../qml/js/dates.js" line="19"/>
         <source>d MMM yyyy</source>
         <comment>date format, as in “Dec. 1st 2023”, see https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html#format-strings</comment>
-        <translation type="unfinished"></translation>
+        <translation>d MMM yyyy</translation>
     </message>
     <message>
         <location filename="../qml/js/dates.js" line="21"/>
         <source>d MMM</source>
         <comment>date format without year, as in “Dec. 1st”, see https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html#format-strings</comment>
-        <translation type="unfinished"></translation>
+        <translation>d MMM</translation>
     </message>
     <message>
         <location filename="../qml/js/dates.js" line="76"/>
         <source>%1 (%2)</source>
         <comment>1: date, 2: time zone info</comment>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -680,7 +681,7 @@ Please restart the app and check the logs.</source>
     <message>
         <location filename="../qml/moe.smoothie.jubilee.qml" line="23"/>
         <source>Jubilee</source>
-        <translation type="unfinished">Jubilee</translation>
+        <translation>Юбилей</translation>
     </message>
 </context>
 </TS>
