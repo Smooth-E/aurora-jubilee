@@ -1,11 +1,13 @@
 # This file is part of harbour-jubilee.
 # SPDX-FileCopyrightText: 2022-2026 Mirian Margiani
+# SPDX-FileCopyrightText: 2026 Smooth-E
 # SPDX-License-Identifier: GPL-3.0-or-later
+
 [Desktop Entry]
 Type=Application
 X-Nemo-Application-Type=silica-qt5
-Icon=harbour-jubilee
-Exec=harbour-jubilee
+Icon=moe.smoothie.jubilee
+Exec=moe.smoothie.jubilee
 Name=Jubilee
 
 # TRANSLATORS
@@ -16,12 +18,9 @@ Name=Jubilee
 # please test it before submitting your translation.
 Name[en]=Jubilees
 Name[de]=Jubiläum
+Name[ru]=Юбилей
 
-[X-Sailjail]
+[X-Application]
 Permissions=
-OrganizationName=harbour-jubilee
-ApplicationName=harbour-jubilee
-
-[X-HarbourBackup]
-BackupConfigList=/apps/harbour-jubilee/
-BackupPathList=.local/share/harbour-jubilee/
+OrganizationName=moe.smoothie
+ApplicationName=jubilee
