@@ -15,6 +15,7 @@ select_all=1
 select_cpython=
 select_clean_cpython=
 select_pyotherside=
+select_install_modules=
 
 cpython_enable_optimizations="--enable-optimizations"
 
@@ -29,6 +30,7 @@ help()
    echo "  --build-cpython     Build cpython."
    echo "  --clean-cpython     Remove unnecessary cpython components to optimize build time and app size."
    echo "  --build-pyotherside Build pyotherside."
+   echo "  --install-modules   Install Install necessary pip modules."
    echo "Extra options:"
    echo "  --enable-optimizations Pass --enable-optimizations to ./configure when building cpython for aarch64/x86_64."
 }
@@ -137,6 +139,19 @@ build_pyotherside()
     cd ../../../
 }
 
+install_modules()
+{
+    echo Upgrading pip and installing modules...
+
+    cd vendor/$arch/
+
+    local python_env="PYTHONHOME=. PYTHONPATH=./lib/python$cpython_version:./lib/python$cpython_version/lib-dynload"
+    sb2 -t $target bash -c "$python_env ./bin/python3 -m pip install --upgrade pip"
+    sb2 -t $target bash -c "$python_env ./bin/python3 -m pip install python-dateutil"
+
+    cd ../../
+}
+
 clear_build_folders()
 {
 	echo "Clear build folders..."
@@ -185,6 +200,11 @@ while [[ $# -gt 0 ]]; do
             select_all=0
             shift
         ;;
+        (--install-modules)
+            select_install_modules=1
+            select_all=0
+            shift
+        ;;
         (--enable-optimizations)
             cpython_enable_optimizations="--enable-optimizations"
             shift
@@ -207,4 +227,5 @@ install_dependencies
 if (( select_all || select_cpython )); then build_cpython; fi
 if (( select_all || select_clean_cpython )); then clean_cpython; fi
 if (( select_all || select_pyotherside )); then build_pyotherside; fi
+if (( select_all || select_install_modules )); then install_modules; fi
 clear_build_folders

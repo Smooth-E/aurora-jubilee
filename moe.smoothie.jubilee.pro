@@ -33,7 +33,6 @@ DISTFILES += \
     qml/pages/components/*.qml \
     qml/images/*.png \
     qml/py/*.py \
-    qml/py/*/*.py \
     qml/js/*.js \
     qml/modules/*/*/qmldir \
     qml/modules/*/*/*/qmldir \
