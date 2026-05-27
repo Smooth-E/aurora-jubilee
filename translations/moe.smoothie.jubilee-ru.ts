@@ -245,7 +245,7 @@
         <translation>Подсчет</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="31"/>
+        <location filename="../qml/pages/MainPage.qml" line="30"/>
         <source>History</source>
         <translation>История</translation>
     </message>

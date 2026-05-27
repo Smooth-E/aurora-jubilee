@@ -22,14 +22,12 @@ Page {
 
         Tab {
             title: qsTr("Calculations")
-             description: "                                        "
              icon: "image://theme/icon-m-date"
             source: Qt.resolvedUrl("CalcView.qml")
         }
 
         Tab {
             title: qsTr("History")
-             description: "                                        "
              icon: "image://theme/icon-m-history"
             source: Qt.resolvedUrl("HistoryView.qml")
         }

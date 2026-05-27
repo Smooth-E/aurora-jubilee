@@ -39,10 +39,8 @@ from:Theme.secondaryColor
 to:Theme.secondaryHighlightColor
 progress:colorInterpolator.progress
 }Column{id:contentColumn
-x:{if(root.tabCount>1&&root.tabIndex==0){return root.width-width-Theme.paddingMedium
-}else if(root.tabCount>1&&root.tabIndex==root.tabCount-1){return Theme.paddingMedium
-}else{return((root.width-width)/2)-(highlightImage.status===Image.Ready?bubble.width*0.5:0)
-}}y:(root.height-height)/2
+x:{return((root.width-width)/2)-(highlightImage.status===Image.Ready?bubble.width*0.5:0)
+}y:(root.height-height)/2
 HighlightImage{id:highlightImage
 anchors.horizontalCenter:parent.horizontalCenter
 highlighted:root.highlighted||root.isCurrentTab
