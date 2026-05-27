@@ -33,7 +33,7 @@ ApplicationWindow {
     property string currentDate
     property string currentTz
 
-    property string ageInMinutes: M.value(0).toString()
+    property string ageInMinutes: "0"
     property var ageInWall: ({
         years: 0, months: 0, days: 0, hours: 0, minutes: 0
     })
