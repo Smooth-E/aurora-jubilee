@@ -13,4 +13,4 @@ dist/packages
 
 vendor/
 build/
-:Zone.Identifier
+*:Zone.Identifier
