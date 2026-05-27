@@ -3,6 +3,7 @@
         "*.desktop": "shellscript",
         "*.pro": "shellscript",
         "*.spec": "shellscript",
-        "*.changes": "shellscript"
+        "*.changes": "shellscript",
+        "*.ts": "xml"
     }
 }

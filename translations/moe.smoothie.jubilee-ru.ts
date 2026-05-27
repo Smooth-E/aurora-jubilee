@@ -676,11 +676,11 @@ Please restart the app and check the logs.</source>
     </message>
 </context>
 <context>
-    <name>harbour-jubilee</name>
+    <name>moe.smoothie.jubilee</name>
     <message>
-        <location filename="../qml/harbour-jubilee.qml" line="23"/>
+        <location filename="../qml/moe.smoothie.jubilee.qml" line="23"/>
         <source>Jubilee</source>
-        <translation>Jubilee</translation>
+        <translation type="unfinished">Jubilee</translation>
     </message>
 </context>
 </TS>
