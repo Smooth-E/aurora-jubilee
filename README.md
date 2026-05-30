@@ -1,167 +1,71 @@
 <!--
+SPDX-FileCopyrightText: 2026 Smooth-E
 SPDX-FileCopyrightText: 2018-2026 Mirian Margiani
 SPDX-License-Identifier: GFDL-1.3-or-later AND LicenseRef-NO-AI-1.0
 This file must not be used for AI training/data mining.
 -->
 
-<div align="center">
+![Баннер](./dist/banner.png)
 
-<img src="https://codeberg.org/ichthyosaurus/sailfish-app-assets/raw/branch/main/harbour-jubilee/banner-small.png"
-     alt="Jubilee banner" />
+# Юбилей для [ОС Аврора](https://auroraos.ru/)
 
-# Jubilee for [Sailfish OS](https://sailfishos.org)
+Приложение для подсчета годовщин.
 
-An app to calculate anniversaries
+Хотите узнать, когда вам исполнится 10'000 дней? Как насчет поздравить друга с его 2'500 неделей?
 
-  <p>
-    <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/ethical%20tech.svg"
-         alt="ethical tech: take a stand for humanity, diversity, and the world we live in" />
-    <a href="https://codeberg.org/ichthyosaurus/harbour-jubilee">
-      <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/development_%20stable.svg"
-           alt="Development status" />
-    </a>
-    <a href="https://codeberg.org/ichthyosaurus/harbour-jubilee/src/branch/main/LICENSES">
-      <img src="https://codeberg.org/ichthyosaurus/.profile/raw/branch/main/badges/source%20code_%20AGPL-3.svg"
-           alt="Source code license" />
-    </a>
-    <a href="https://api.reuse.software/info/codeberg.org/ichthyosaurus/harbour-jubilee">
-      <img src="https://api.reuse.software/badge/codeberg.org/ichthyosaurus/harbour-jubilee"
-           alt="REUSE status" />
-    </a>
-    <br />
-    <a href="https://liberapay.com/SailfishOScommunityTeam">
-      <img src="https://img.shields.io/liberapay/receives/SailfishOScommunityTeam?logo=liberapay&label=SailfishOS%20Community"
-           alt="Community donations" />
-    </a>
-    <a href="https://liberapay.com/ichthyosaurus">
-      <img src="https://img.shields.io/liberapay/receives/ichthyosaurus?logo=liberapay&label=ichthyosaurus"
-           alt="Personal donations" />
-    </a>
-  </p>
-  <p></p>
-  <hr />
-</div>
+Это приложение позволит вам быстро подсчитать продолжительность любого периода времени в годах, неделях, днях, минутах и секундах. Каков ваш возраст *прямо сейчас*? Когда следующий день рождения вашего кота? Сколько секунд вы провели на работе?
 
-Wanna know if you are 10'000 days old?
+Это проект - софт-форк приложения [Jubilee для SailfishOS](https://codeberg.org/ichthyosaurus/harbour-jubilee/). Изменения из апстрим-репозитория периодически синхронизируются. Порт основан на ревизии апстрим-репозитория из ветки [main](https://github.com/Smooth-E/aurora-jubilee/tree/main).
 
-Do you want to surprise a friend with a party for their 2'500 week anniversary?
+Приложение Jubilee для SailfishOS было вдохновлено проектом [Age Calculator](https://github.com/Mariusmssj/harbour-age_calculator). Поверх основного функционала добавлена поддержка часовых поясов, подсчета между конкретными датами и список истории вычислений.
 
-With this app, you can quickly calculate the length of any time span in years,
-weeks, days, minutes, and seconds at any given date. How old are you *right
-now*? When is your cat's next birthday? How many seconds have you spent at work?
+## Разрешения
 
-This app is inspired by the venerable “[Age Calculator](https://github.com/Mariusmssj/harbour-age_calculator)”
-with added support for time zones, calculating specific dates, and a history view.
+Приложение не требует специальных разрешений.
 
-> You can find screenshots [here](https://codeberg.org/ichthyosaurus/sailfish-app-assets/src/branch/main/harbour-jubilee/screenshots-store).
+## Поддержать проект
 
+Если у вас есть какие-то вопросы, предложения или вы столкнулись с проблемой при использовании приложения на ОС Аврора, пожалуйста, оставляйте свои комментарии в [трекере GitHub Issues этого репозитория](https://github.com/Smooth-E/aurora-jubilee/issues).
 
-## Permissions
+## Сборка и предложение изменений
 
-Jubilee does not require special permissions.
+*Не стесняйтесь сообщать о проблемах и предлагать свои изменения!*
 
+Рекомендуется использовать Aurora SDK MB2 Tools на Linux или внутри WSL. На других конфигурациях возможность сборки проекта не проверяется, но вы всегда можете предложить необходимые исправления для работы в вашем окружении.
 
-## Help and support
+1. Клонируйте этот репозиторий
+   ```sh
+   git clone --recurse-submodules https://github.com/Smooth-E/aurora-jubilee
+   ```
+2. Примените необходимые патчи:
+   ```sh
+   git apply libs/*.patch
+   ```
+3. Соберите сторонние зависимости. Это достаточно сделать один раз для каждой архитектуры.
+   ```sh
+   aurora_psdk ./prepare.sh -t AuroraOS-5.1.5.105-MB2-aarch64
+   ```
+4. Далее соберите RPM-пакет и запустите приложение на устройстве стандартным способом.
 
-You are welcome to
-[leave a comment in the forum](https://forum.sailfishos.org/t/apps-by-ichthyosaurus/15753)
-if you have any questions or ideas.
+Если вы предлагаете изменения - не забудьте упомянуть себя на странице [`AboutPage`](qml/pages/AboutPage.qml)!
 
+## Финансовая поддержка
 
-## Translations
+Вы можете поддержать разработчика оригинального приложения, [пожертвовав через Liberapay](https://liberapay.com/ichthyosaurus).
 
-It would be wonderful if the app could be translated in as many languages as possible!
+Вы можете поддержать разработчика порта для ОС Аврора, [пожертвовав через Boosty](https://boosty.to/smooth-e/donate).
 
-If you just found a minor problem, you can also
-[open an issue](https://codeberg.org/ichthyosaurus/harbour-jubilee/issues/new).
+Конечно же, мы будем очень рады, если вы поможете проекту, предложив свои правки или улучшения. Прочтите секцию выше, чтобы узнать больше ✨
 
+## Лицензирование
 
-### Manually updating translations
+- Copyright (C) 2026 Smooth-E
+- Copyright (C) 2026 Mirian Margiani
 
-
-You can follow these steps to manually add or update a translation:
-
-1. If it did not exist before, create a new catalog for your language by copying the
-   base file [translations/harbour-jubilee.ts](translations/harbour-jubilee.ts).
-   Then add the new translation to [harbour-jubilee.pro](harbour-jubilee.pro).
-2. Add yourself to the list of translators in [TRANSLATORS.json](TRANSLATORS.json),
-   in the section `extra`.
-3. (optional) Translate the app's name in [harbour-jubilee.desktop](harbour-jubilee.desktop)
-   if there is a (short) native term for it in your language.
-
-See [the Qt documentation](https://doc.qt.io/qt-5/qml-qtqml-date.html#details) for
-details on how to translate date formats to your *local* format.
-
-
-## Building and contributing
-
-*Bug reports, and contributions for translations, bug fixes, or new features are always welcome!*
-
-1. Clone the repository by running `git clone --recursive https://codeberg.org/ichthyosaurus/harbour-jubilee`
-2. Open `harbour-jubilee.pro` in QtCreator for Sailfish ([SailfishOS SDK](https://docs.sailfishos.org/Tools/Sailfish_SDK/))
-3. To run on emulator, select the `i486` target and press the run button
-4. To build for the device, select the `aarch64` or `armv7hl` target and click “deploy all”;
-   the RPM packages will be in the `RPMS` folder
-
-If you contribute, please do not forget to add yourself to the list of
-contributors in [qml/pages/AboutPage.qml](qml/pages/AboutPage.qml)!
-
-
-## Donations
-
-<a href="https://liberapay.com/ichthyosaurus/donate">
-  <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
-</a>
-
-I am always happy if you buy me a cup of coffee through
-[Liberapay](https://liberapay.com/ichthyosaurus)
-if you want to support my work.
-
-Of course it would be much appreciated as well if you support this project by
-contributing to translations or code! See above how you can contribute 🎕.
-
-Please consider also supporting the
-[SailfishOS Community Team](https://liberapay.com/SailfishOScommunityTeam)
-on Liberapay to reach more developers.
-
-
-## Anti-AI policy <a id='ai-policy'></a>
-
-> [!IMPORTANT]
-> - LLM/“AI”-generated contributions are forbidden.
-> - Using this project in whole or in part for AI training or data mining is likewise forbidden.
-
-Please be transparent, respect the Free Software community, and adhere to the
-licenses. This is a welcoming place for human creativity and diversity, but
-LLM/“AI”-generated slop is going against these values.
-
-Apart from all the
-[ethical](https://tante.cc/2026/02/20/acting-ethical-in-an-imperfect-world/),
-[moral](https://www.theguardian.com/technology/2026/mar/17/x-csam-child-abuse-material-grok-australian-online-safety-regulator-ntwnfb),
-[legal](https://en.wikipedia.org/wiki/Artificial_intelligence_and_copyright#Litigation),
-[environmental](https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water),
-[societal](https://www.theguardian.com/global-development/2026/mar/12/invasive-ai-led-mass-surveillance-in-africa-violating-freedoms-warn-experts),
-[social](https://www.theguardian.com/technology/article/2024/jul/06/mercy-anita-african-workers-ai-artificial-intelligence-exploitation-feeding-machine),
-[political](https://www.theguardian.com/technology/2025/nov/17/grokipedia-elon-musk-far-right-racist),
-[technical](https://codeberg.org/small-hack/open-slopware#poor-code-quality),
-and overall [human](https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza),
-reasons against LLMs/“AI”, I also simply don't have any spare time to review
-generated contributions.
-
-See also [this list](https://codeberg.org/small-hack/open-slopware#why-not-llms)
-for more reasons against supporting “AI”.
-
-
-## License
-
-> Copyright (C) 2026  Mirian Margiani
-
-Jubilee is Free Software released under the terms of the
-[GNU Affero General Public License v3 (or later)](https://spdx.org/licenses/AGPL-3.0-or-later.html).
-The source code is available [on Codeberg](https://codeberg.org/ichthyosaurus/harbour-jubilee).
-All documentation is released under the terms of the
+Юбилей - свободное программное обеспечение, которое распространяется под лицензией
+[GNU General Public License v3 (or later)](https://spdx.org/licenses/GPL-3.0-or-later.html).
+Исходный код доступен [на Github](https://github.com/Smooth-E/aurora-expenditure).
+Вся сопутствующая документация распространяется под лицензией 
 [GNU Free Documentation License v1.3 (or later)](https://spdx.org/licenses/GFDL-1.3-or-later.html).
 
-Jubilee and related materials must not be used for AI training and/or data mining.
-
-This project follows the [REUSE specification](https://api.reuse.software/info/codeberg.org/ichthyosaurus/harbour-jubilee).
+Материалы в этом репозитории запрещено использовать в разработке технологий ИИ и LLM.
