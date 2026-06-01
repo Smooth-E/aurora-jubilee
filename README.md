@@ -64,7 +64,7 @@ This file must not be used for AI training/data mining.
 
 Юбилей - свободное программное обеспечение, которое распространяется под лицензией
 [GNU General Public License v3 (or later)](https://spdx.org/licenses/GPL-3.0-or-later.html).
-Исходный код доступен [на Github](https://github.com/Smooth-E/aurora-expenditure).
+Исходный код доступен [на Github](https://github.com/Smooth-E/aurora-jubilee).
 Вся сопутствующая документация распространяется под лицензией 
 [GNU Free Documentation License v1.3 (or later)](https://spdx.org/licenses/GFDL-1.3-or-later.html).
 
