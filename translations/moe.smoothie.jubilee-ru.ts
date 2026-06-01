@@ -654,6 +654,19 @@ Please restart the app and check the logs.</source>
     </message>
 </context>
 <context>
+    <name>TimezonePicker</name>
+    <message>
+        <location filename="../qml/pages/TimezonePicker.qml" line="17"/>
+        <source>Timezone</source>
+        <translation>Часовой пояс</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/TimezonePicker.qml" line="35"/>
+        <source>No specific timezone</source>
+        <translation>Без часового пояса</translation>
+    </message>
+</context>
+<context>
     <name>ViewPulley</name>
     <message>
         <location filename="../qml/components/ViewPulley.qml" line="12"/>

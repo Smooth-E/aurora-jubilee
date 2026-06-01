@@ -5,10 +5,12 @@
  */
 
 pragma Singleton
+
 import QtQuick 2.6
 import QtQml 2.2
 import QtQml.Models 2.2
 import Sailfish.Silica 1.0
+import io.thp.pyotherside 1.5
 
 // The *TimezoneModel* (from Sailfish.Timezone) is not documented and the API
 // is not public. It is possible to take a look at the model's methods:
@@ -37,46 +39,28 @@ import Sailfish.Silica 1.0
 QtObject {
     id: root
 
+    readonly property var model: _proxyModel
+    readonly property bool ready: _proxyModelArray !== null
+
     readonly property string __lc: "[TimezoneInfo]"
     readonly property var __lookupCache: ({})
 
-    readonly property Instantiator _proxyModel: Instantiator {
-        id: timezoneProxyModel
-        delegate: QtObject {
-            readonly property string name:                model.name
-            readonly property string area:                model.area
-            readonly property string city:                model.city
-            readonly property string country:             model.country
-            readonly property string offset:              model.offset
-            readonly property string offsetWithDstOffset: model.offsetWithDstOffset
-            readonly property string currentOffset:       model.currentOffset
-            readonly property string sectionOffset:       model.sectionOffset
-        }
+    property ListModel _proxyModel: ListModel { }
+    property var _proxyModelArray: null
 
-        // Avoid hard dependencies on unstable/non-public APIs and load
-        // them in a convoluted way to make Jolla's validator script happy.
-        //
-        // WARNING This might fail horribly some day.
-        model: null
-
+    readonly property Python _python: Python {
         Component.onCompleted: {
-            try {
-                model = Qt.createQmlObject("
-                    import QtQuick 2.0
-                    import %1 1.0
-                    TimezoneModel {}
-                ".arg("Sailfish.Timezone"),
-                      timezoneProxyModel, 'TimezoneInfo')
-            } catch (e) {
-                console.error(__lc, "failed to load the time zone model!")
-                console.error(__lc, "QML errors:")
-
-                for (var i = 0; i < e.qmlErrors.length; ++i) {
-                    console.error(__lc, "  #" + (i+1), "@",
-                                  e.qmlErrors[i].lineNumber + "," + e.qmlErrors[i].columnNumber + ":",
-                                  e.qmlErrors[i].message)
+            console.log(__lc, "Adding import path", Qt.resolvedUrl("."))
+            addImportPath(Qt.resolvedUrl("."))
+            importModule("timezoneinfo", function() { console.error(__lc, "Error importing module") })
+            
+            console.log(__lc, "Initializing model...")
+            call("timezoneinfo.get_timezones", [ Qt.locale().name ], function(result) { 
+                _proxyModelArray = result
+                for (var i = 0; i < result.length; i++) {
+                    _proxyModel.append(result[i])
                 }
-            }
+            })
         }
     }
 
@@ -88,18 +72,18 @@ QtObject {
             return __lookupCache[queryName]
         }
 
-        if (timezoneProxyModel.model === null) {
+        if (_proxyModel.count === 0) {
             console.log(__lc, "cannot lookup timezone info for “%1”: model is not yet ready".arg(queryName))
             return null
         }
 
-        var count = timezoneProxyModel.count
+        var count = _proxyModel.count
         for (var i = 0; i < count; ++i) {
-            var item = timezoneProxyModel.objectAt(i)
+            var item = _proxyModelArray[i]
 
             if (item.name === queryName) {
                 console.log(__lc, "found timezone info for “%1”:".arg(queryName),
-                            item.area, "/", item.city, "@", item.offsetWithDstOffset)
+                            item.area, "/", item.city, "@", item.offset)
                 __lookupCache[queryName] = item
                 return item
             }

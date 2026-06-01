@@ -147,7 +147,7 @@ install_modules()
 
     local python_env="PYTHONHOME=. PYTHONPATH=./lib/python$cpython_version:./lib/python$cpython_version/lib-dynload"
     sb2 -t $target bash -c "$python_env ./bin/python3 -m pip install --upgrade pip"
-    sb2 -t $target bash -c "$python_env ./bin/python3 -m pip install python-dateutil"
+    sb2 -t $target bash -c "$python_env ./bin/python3 -m pip install python-dateutil babel"
 
     cd ../../
 }

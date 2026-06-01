@@ -41,12 +41,8 @@ TwoLineDelegate {
                 hour: !!dateParsed ? dateParsed.getHours() : 0,
                 minute: !!dateParsed ? dateParsed.getMinutes() : 0,
 
-                acceptDestination: "Sailfish.Timezone.TimezonePicker",
+                acceptDestination: Qt.resolvedUrl("../pages/TimezonePicker.qml"),
                 acceptDestinationAction: PageStackAction.Push,
-                acceptDestinationProperties: {
-                    showUniversalTimeOption: true,
-                    showNoTimezoneOption: true,
-                }
             }
         })
 
