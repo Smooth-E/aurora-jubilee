@@ -129,10 +129,8 @@ TabItem {
 
                 Connections {
                     target: app.wallClock
-                    onTimeChanged: {
-                        if (projectedPicker.isUserDefined) return
-                        projectedPicker.resetToNow()
-                    }
+
+                    onDateTimeChanged: if (!projectedPicker.isUserDefined) projectedPicker.resetToNow()
                 }
             }
 

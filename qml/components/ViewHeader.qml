@@ -19,13 +19,12 @@ PageHeader {
         height: root.height
 
         Label {
-            visible: app.haveWallClock
             anchors {
                 left: parent.left
                 verticalCenter: parent.verticalCenter
             }
             color: palette.highlightColor
-            text: app.wallClock ? Format.formatDate(app.wallClock.time, Formatter.TimeValue) : ''
+            text: Format.formatDate(app.wallClock.dateTime, Formatter.TimeValue)
             font.pixelSize: Theme.fontSizeMedium
         }
     }

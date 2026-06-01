@@ -101,7 +101,7 @@
     <name>CalcView</name>
     <message>
         <location filename="../qml/pages/CalcView.qml" line="59"/>
-        <location filename="../qml/pages/CalcView.qml" line="140"/>
+        <location filename="../qml/pages/CalcView.qml" line="138"/>
         <source>Calculations</source>
         <translation type="unfinished"></translation>
     </message>
@@ -209,12 +209,12 @@
         </translation>
     </message>
     <message>
-        <location filename="../qml/pages/HistoryView.qml" line="125"/>
+        <location filename="../qml/pages/HistoryView.qml" line="126"/>
         <source>Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/HistoryView.qml" line="133"/>
+        <location filename="../qml/pages/HistoryView.qml" line="134"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>

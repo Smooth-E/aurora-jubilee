@@ -10,6 +10,7 @@ import Sailfish.Silica 1.0
 import Opal.About 1.0 as A
 import Opal.SupportMe 1.0 as M
 import Opal.LocalStorage 1.0 as L
+import Jubilee 1.0
 
 import "js/dates.js" as Dates
 import "js/storage.js" as Storage
@@ -25,8 +26,7 @@ ApplicationWindow {
     property string coverStartDateText
     property string coverProjectedDateText
 
-    property QtObject wallClock
-    property bool haveWallClock: wallClock != null
+    property WallClock wallClock: WallClock { }
     readonly property string appName: qsTr("Jubilee")
 
     property ListModel historyModel: ListModel {}
@@ -123,20 +123,6 @@ ApplicationWindow {
     }
 
     Component.onCompleted: {
-        // Extensions that are not crucial and are generally not allowed in
-        // Jolla's Harbour store are loaded dynamically. The app will handle
-        // it gracefully if loading fails.
-
-        // Avoid hard dependency on Nemo.Time and load it in a complicated
-        // way to make Jolla's validator script happy.
-        wallClock = Qt.createQmlObject("
-            import QtQuick 2.0
-            import %1 1.0
-            WallClock {
-                enabled: Qt.application.active
-                updateFrequency: WallClock.Minute
-            }".arg("Nemo.Time"), app, 'WallClock')
-
         var entries = Storage.getHistoryEntries()
 
         for (var i = 0; i < entries.length; ++i) {

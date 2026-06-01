@@ -12,6 +12,7 @@
 #include <QTimeZone>
 
 #include <auroraapp.h>
+#include "wallclock.h"
 #include "requires_defines.h"
 
 int main(int argc, char *argv[])
@@ -37,6 +38,8 @@ int main(int argc, char *argv[])
 
     // Vendored pyotherside
     view->engine()->addImportPath(Aurora::Application::pathTo("lib/qt5/qml").toString());
+
+    qmlRegisterType<WallClock>("Jubilee", 1, 0, "WallClock");
 
     view->setSource(Aurora::Application::pathToMainQml());
     view->show();

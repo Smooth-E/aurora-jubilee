@@ -24,7 +24,12 @@ include(libs/opal-cached-defines.pri)
 
 include(libs/opal.pri)
 
-SOURCES += src/main.cpp
+SOURCES += \
+    src/main.cpp \
+    src/wallclock.cpp \
+
+HEADERS += \
+    src/wallclock.h
 
 DISTFILES += \
     qml/moe.smoothie.jubilee.qml \

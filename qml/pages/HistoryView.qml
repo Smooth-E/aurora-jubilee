@@ -98,7 +98,8 @@ TabItem {
 
                 Connections {
                     target: app.wallClock
-                    onTimeChanged: infoItem.update()
+
+                    onDateTimeChanged: infoItem.update()
                 }
 
                 Component.onCompleted: {
