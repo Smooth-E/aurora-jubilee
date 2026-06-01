@@ -637,12 +637,12 @@ Please restart the app and check the logs.</source>
 <context>
     <name>TimezonePicker</name>
     <message>
-        <location filename="../qml/pages/TimezonePicker.qml" line="17"/>
+        <location filename="../qml/pages/TimezonePicker.qml" line="23"/>
         <source>Timezone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/TimezonePicker.qml" line="35"/>
+        <location filename="../qml/pages/TimezonePicker.qml" line="41"/>
         <source>No specific timezone</source>
         <translation type="unfinished"></translation>
     </message>
