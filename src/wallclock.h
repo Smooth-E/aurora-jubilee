@@ -1,3 +1,9 @@
+/*
+ * This file is part of harbour-jubilee.
+ * SPDX-FileCopyrightText: 2026 Smooth-E
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 #ifndef WALLCLOCK_H
 #define WALLCLOCK_H
 

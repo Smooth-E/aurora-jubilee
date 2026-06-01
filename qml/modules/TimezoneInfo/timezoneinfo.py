@@ -1,7 +1,10 @@
+# This file is part of harbour-jubilee.
+# SPDX-FileCopyrightText: 2026 Smooth-E
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 from datetime import datetime
 from babel import Locale
 from babel.dates import get_timezone, get_timezone_location, get_timezone_name, get_timezone_gmt
-import locale
 
 def get_timezones(system_locale):
     babel_locale = Locale.parse(system_locale)

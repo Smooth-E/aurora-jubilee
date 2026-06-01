@@ -1,3 +1,9 @@
+/*
+ * This file is part of harbour-jubilee.
+ * SPDX-FileCopyrightText: 2026 Smooth-E
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 #include "wallclock.h"
 
 WallClock::WallClock(QObject *parent)
