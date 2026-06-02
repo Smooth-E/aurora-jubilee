@@ -8,5 +8,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Tue Jun 02 2026 Smooth-E <smoothie@disroot.org> 1.0.0.1-1
+- Первый релиз для ОС Аврора
+- Компоненты pyotherside, cpython, python-dateutil и babel теперь поставляются вместе с приложением
+- Компонент Nemo.WallClock заменен реализацией внутри приложения
+- Системный диалог выбора часового пояса заменен реализацией внутри приложения
+- Добавлены переводы на Русский язык
+- Изменена панель с вкладками
+- Добавлена информативная обложка
+
 * Thu Feb 12 2026 Mirian Margiani <mixosaurus+ichthyo@pm.me> 1.0.0-1
 - initial release

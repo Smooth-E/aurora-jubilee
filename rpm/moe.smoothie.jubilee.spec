@@ -11,7 +11,7 @@ Name:       moe.smoothie.jubilee
 %define _buildhost Aurora Build Engine
 
 Summary:    Приложение для подсчета важных дат.
-Version:    1.0.0
+Version:    1.0.0.1
 Release:    1
 Group:      Applications/Productivity
 License:    GPL-3.0-or-later
