@@ -36,7 +36,7 @@ SupportDialog {
         title: qsTr("Develop on %1").arg("GitHub")
         description: qsTr("Support with maintenance and packaging, " +
                           "write code, or provide valuable bug reports.")
-        link: "https://github.com/Smooth-E/aurora-jubilee"
+        link: "https://github.com/salty-smoothie/aurora-jubilee"
     }
 
     DetailsDrawer {

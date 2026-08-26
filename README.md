@@ -13,13 +13,13 @@ This file must not be used for AI training/data mining.
 
 | Ссылки для скачивания |
 | --- |
-| 📦 [RuStore для ОС Аврора](https://www.rustore.ru/osaurora) <br> 🛒 [Аврора Маркет](https://aurorarepos.ru/aurora-5/iubilei) <br> 😼 [Скачать RPM](https://github.com/Smooth-E/aurora-jubilee/releases/latest/) |
+| 📦 [RuStore для ОС Аврора](https://www.rustore.ru/osaurora) <br> 🛒 [Аврора Маркет](https://aurorarepos.ru/aurora-5/iubilei) <br> 😼 [Скачать RPM](https://github.com/salty-smoothie/aurora-jubilee/releases/latest/) |
 
 Хотите узнать, когда вам исполнится 10'000 дней? Как насчет поздравить друга с его 2'500 неделей?
 
 Это приложение позволит вам быстро подсчитать продолжительность любого периода времени в годах, неделях, днях, минутах и секундах. Каков ваш возраст *прямо сейчас*? Когда следующий день рождения вашего кота? Сколько секунд вы провели на работе?
 
-Это проект - софт-форк приложения [Jubilee для SailfishOS](https://codeberg.org/ichthyosaurus/harbour-jubilee/). Изменения из апстрим-репозитория периодически синхронизируются. Порт основан на ревизии апстрим-репозитория из ветки [main](https://github.com/Smooth-E/aurora-jubilee/tree/main).
+Это проект - софт-форк приложения [Jubilee для SailfishOS](https://codeberg.org/ichthyosaurus/harbour-jubilee/). Изменения из апстрим-репозитория периодически синхронизируются. Порт основан на ревизии апстрим-репозитория из ветки [main](https://github.com/salty-smoothie/aurora-jubilee/tree/main).
 
 Приложение Jubilee для SailfishOS было вдохновлено проектом [Age Calculator](https://github.com/Mariusmssj/harbour-age_calculator). Поверх основного функционала добавлена поддержка часовых поясов, подсчета между конкретными датами и список истории вычислений.
 
@@ -29,7 +29,7 @@ This file must not be used for AI training/data mining.
 
 ## Поддержать проект
 
-Если у вас есть какие-то вопросы, предложения или вы столкнулись с проблемой при использовании приложения на ОС Аврора, пожалуйста, оставляйте свои комментарии в [трекере GitHub Issues этого репозитория](https://github.com/Smooth-E/aurora-jubilee/issues).
+Если у вас есть какие-то вопросы, предложения или вы столкнулись с проблемой при использовании приложения на ОС Аврора, пожалуйста, оставляйте свои комментарии в [трекере GitHub Issues этого репозитория](https://github.com/salty-smoothie/aurora-jubilee/issues).
 
 ## Сборка и предложение изменений
 
@@ -39,7 +39,7 @@ This file must not be used for AI training/data mining.
 
 1. Клонируйте этот репозиторий
    ```sh
-   git clone --recurse-submodules https://github.com/Smooth-E/aurora-jubilee
+   git clone --recurse-submodules https://github.com/salty-smoothie/aurora-jubilee
    ```
 2. Примените необходимые патчи:
    ```sh
@@ -68,8 +68,10 @@ This file must not be used for AI training/data mining.
 
 Юбилей - свободное программное обеспечение, которое распространяется под лицензией
 [GNU General Public License v3 (or later)](https://spdx.org/licenses/GPL-3.0-or-later.html).
-Исходный код доступен [на Github](https://github.com/Smooth-E/aurora-jubilee).
+Исходный код доступен [на Github](https://github.com/salty-smoothie/aurora-jubilee).
 Вся сопутствующая документация распространяется под лицензией 
 [GNU Free Documentation License v1.3 (or later)](https://spdx.org/licenses/GFDL-1.3-or-later.html).
+
+- Фото ["Rippling turquoise water with sunlight reflections"](https://unsplash.com/photos/rippling-turquoise-water-with-sunlight-reflections-sR5Dw9UfYF4) было использовано при создании баннера и скриншотов
 
 Материалы в этом репозитории запрещено использовать в разработке технологий ИИ и LLM.

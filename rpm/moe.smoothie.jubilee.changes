@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu Aug 27 2026 Smooth-E <smoothie@disroot.org> 1.0.0.2-1
+- Изменена ссылка на исходный код приложения
+
 * Tue Jun 02 2026 Smooth-E <smoothie@disroot.org> 1.0.0.1-1
 - Первый релиз для ОС Аврора
 - Компоненты pyotherside, cpython, python-dateutil и babel теперь поставляются вместе с приложением

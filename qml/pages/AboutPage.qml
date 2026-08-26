@@ -28,7 +28,7 @@ A.AboutPageBase {
     appVersion: APP_VERSION
     appRelease: APP_RELEASE
 
-    sourcesUrl: "https://github.com/Smooth-E/aurora-jubilee"
+    sourcesUrl: "https://github.com/salty-smoothie/aurora-jubilee"
     changelogList: Qt.resolvedUrl("../Changelog.qml")
     licenses: A.License { spdxId: "GPL-3.0-only" }
 

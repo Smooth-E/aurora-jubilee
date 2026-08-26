@@ -11,11 +11,11 @@ Name:       moe.smoothie.jubilee
 %define _buildhost Aurora Build Engine
 
 Summary:    Приложение для подсчета важных дат.
-Version:    1.0.0.1
+Version:    1.0.0.2
 Release:    1
 Group:      Applications/Productivity
 License:    GPL-3.0-or-later
-URL:        https://github.com/Smooth-E/aurora-jubilee
+URL:        https://github.com/salty-smoothie/aurora-jubilee
 Source0:    %{name}-%{version}.tar.bz2
 
 Requires:   sailfishsilica-qt5 >= 0.10.9
